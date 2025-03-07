@@ -239,10 +239,11 @@ module.exports = {
       ],
       include: /images/,
     },
-    {
-      test: /\.json$/,
-      exclude: /node_modules/,
-      loaders: ['json-loader'],
-    }],
+    // {
+    //   test: /\.json$/,
+    //   exclude: /node_modules/,
+    //   loaders: ['json-loader'],
+    // }
+  ],
   },
 }
