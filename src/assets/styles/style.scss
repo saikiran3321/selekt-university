@@ -1,0 +1,18 @@
+.nav-tabs .nav-item.nav-link.active {
+  color: #212121;
+  background-color: #ffffff;
+  border-top: 5px solid #f39100;
+  border-radius: 0px;
+  font-weight: 500;
+}
+
+.nav-tabs .nav-item.nav-link {
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	color: #212121 !important;
+	font-weight: 400;
+}
+
+.nav-tabs .nav-link:hover {
+  border: 1px solid #fdfdfd;
+}

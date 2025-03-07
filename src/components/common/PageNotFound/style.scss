@@ -1,0 +1,123 @@
+.main_logo {
+	margin-top: 10px;
+}
+.page_display{
+	position:fixed;
+    top: 50%;
+    left: 50%;
+}
+
+.page_404 {
+    display: block;
+	margin-top: 50px;
+}
+
+.home_link {
+	width: auto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    padding: 15px 50px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);
+    display: table;
+    margin: 0 auto;
+}
+
+.mobile {
+	display: none;
+}
+.desktop {
+	display: block;
+}
+
+.error_page img{
+	max-width: 70%;
+    height: auto;
+    display: table;
+    margin: 0 auto;
+}
+
+.page_404
+ h2 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+@media only screen and (min-device-width: 751px) and (max-device-width: 800px) {
+	.error_page img {
+		max-width: 100%;
+		height: auto;
+		display: table;
+		margin: 0 auto;
+	}
+	
+	.home_link {
+		width: auto;
+		font-size: 14px;
+	 }
+	
+	 .page_404 h2 {
+		text-align: center;
+		font-size: 25px;
+		text-transform: uppercase;
+		font-weight: 800;
+		margin-bottom: 20px;
+	}
+	
+	.mb_responsive{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 90vh;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 650px) {
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+	.count_user_image {
+		display: none;
+	}
+	.error_page img {
+		max-width: 100%;
+		height: auto;
+		display: table;
+		margin: 0 auto;
+	}
+	
+	.home_link {
+		width: auto;
+		font-size: 14px;
+	 }
+	
+	 .page_404 h2 {
+		text-align: center;
+		font-size: 25px;
+		text-transform: uppercase;
+		font-weight: 800;
+		margin-bottom: 20px;
+	}
+	
+	.mb_responsive{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 90vh;
+	}
+}
