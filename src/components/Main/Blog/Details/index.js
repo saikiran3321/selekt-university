@@ -10,7 +10,7 @@ export default class BlogDetails extends Component {
           <section className="blog-standard-area section-py-120">
             <Container>
               <Row>
-                <Col lg={12}>
+                <Col lg={8}>
                   <div className="blog__standard-post blog__details-wrapper">
                     <div className="blog__standard-thumb">
                       <img alt="img" className="w-100" src={`/assets/images/blog/${post.img}`} />
@@ -109,17 +109,36 @@ export default class BlogDetails extends Component {
                       </Col>
                     </Row>
                   </div>
-                  <div className="blog__post-author">
-                    <div className="blog__post-author-thumb">
-                      <a href="/blog"><img alt="img" src="/assets/images/blog/author.png" /></a>
+                </Col>
+                <Col lg={4}>
+                  <aside className="blog-sidebar">
+                    <div className="blog__post-author">
+                      <div className="d-block">
+                        <div className="blog__post-author-thumb d-flex justify-content-center">
+                          <a href="/blog"><img alt="img" src="/assets/images/blog/author.png" /></a>
+                        </div>
+                        <div className="blog__post-author-content">
+                          <span className="designation">Written by</span>
+                          <h5 className="name">Parker Willy</h5>
+                          <p>Finanappreciate your trust greatly Our clients choose dentace ducts because kneer
+                            areawe ow we are the best area Awaitingare really.</p>
+                        </div>
+                      </div>
                     </div>
-                    <div className="blog__post-author-content">
-                      <span className="designation">Written by</span>
-                      <h5 className="name">Parker Willy</h5>
-                      <p>Finanappreciate your trust greatly Our clients choose dentace ducts because kneer areawe ow we
-                        are the best area Awaitingare really.</p>
+                    <div className="blog-widget">
+                      <h4 className="widget-title">Popular Tags</h4>
+                      <div className="tagcloud">
+                        <a href="/">Art  Design</a>
+                        <a href="/">Courses</a>
+                        <a href="/">App</a>
+                        <a href="/">Learning</a>
+                        <a href="/">UX Course</a>
+                        <a href="/">Video</a>
+                        <a href="/">Education</a>
+                        <a href="/">Programming</a>
+                      </div>
                     </div>
-                  </div>
+                  </aside>
                 </Col>
               </Row>
             </Container>
