@@ -3,7 +3,7 @@ import blogData from '../../util/blog.json'
 import List from './List'
 import Details from './Details'
 
-class Blog extends Component {
+export default class Blog extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -52,5 +52,3 @@ class Blog extends Component {
     return <List blogPosts={blogData} />
   }
 }
-
-export default Blog

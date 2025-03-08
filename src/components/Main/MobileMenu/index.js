@@ -31,14 +31,15 @@ export default class MobileMenu extends Component {
   };
 
   render() {
+    const { path } = this.props
     return (
       <Fragment>
         <ul className="navigation">
-          <li className="active header-btn"><a href="/">Home</a></li>
-          <li className="menu-item-has-children"><a href="/course">Courses</a></li>
-          <li className="menu-item-has-children"><a href="/about">About Us</a></li>
-          <li className="menu-item-has-children"><a href="/blog">Blog</a></li>
-          <li className="menu-item-has-children"><a href="/contact">Contact</a></li>
+          <li className={`header-btn ${path === 'home' ? 'active' : ''}`}><a href="/">Home</a></li>
+          <li className={`header-btn ${path === 'course' ? 'active' : ''}`}><a href="/course">Courses</a></li>
+          <li className={`header-btn ${path === 'about' ? 'active' : ''}`}><a href="/about">About Us</a></li>
+          <li className={`header-btn ${path === 'blog' ? 'active' : ''}`}><a href="/blog">Blog</a></li>
+          <li className={`header-btn ${path === 'contact' ? 'active' : ''}`}><a href="/contact">Contact</a></li>
         </ul>
       </Fragment>
     )

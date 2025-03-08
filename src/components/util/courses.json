@@ -9,10 +9,54 @@
         "language": "china",
         "difficulty": "beginner",
         "rating": "beginner",
-        "reviews" : 5,
-        "price" : 75.00,
-        "color" : "#04BC53",
-        "duration" : "12h 30m"
+        "reviews": 5,
+        "price": 75,
+        "color": "#04BC53",
+        "course": {
+            "title": "Full Stack Developer",
+            "alttext": "react course",
+            "rating": 5,
+            "rated-users": 150,
+            "students": 100,
+            "duration": "2 weeks",
+            "lessons": "20 lessons",
+            "type": "IT",
+            "tags": [
+                "react",
+                "html",
+                "javascript"
+            ]
+        },
+        "info": [
+            "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designs. Lorem ipsum dolor sit amet, consectetuer adipiscingawr elit onec odio. Quisque volutpat mattis eros.",
+            "You’ll be exposed to principles and strategies, but, more importantly, you’ll learn how to actually apply these abstract concepts by coding three different websites for three very different audiences. Lorem ipsum is dummy text used in laying out print, graphic or web designs Lorem ipsum"
+        ],
+        "syllabus": {
+            "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
+        },
+        "sections": {
+            "topics": {
+                "topic": [
+                    {
+                        "ttl": "introduction to react",
+                        "time": "1 week"
+                    },
+                    {
+                        "ttl": "overview of UX/I",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "javascript",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "github",
+                        "time": "2weeks"
+                    }
+                ]
+            }
+        },
+        "duration": "12h 30m"
     },
     {
         "id": 2,
@@ -24,11 +68,56 @@
         "language": "spanish",
         "difficulty": "intermediate",
         "rating": "intermediate",
-        "reviews" : 8,
-        "price" : 100.00,
-        "color" : "#BC18E4",
-        "duration" : "10h 30m",
-        "actual_price" : 125.00
+        "reviews": 8,
+        "price": 100,
+        "color": "#BC18E4",
+        "course": {
+            "title": "Full Stack Developer",
+            "image": "url",
+            "alttext": "react course",
+            "rating": 5,
+            "rated-users": 150,
+            "students": 100,
+            "duration": "2 weeks",
+            "lessons": "20 lessons",
+            "type": "IT",
+            "tags": [
+                "react",
+                "html",
+                "javascript"
+            ]
+        },
+        "info": [
+            "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designs. Lorem ipsum dolor sit amet, consectetuer adipiscingawr elit onec odio. Quisque volutpat mattis eros.",
+            "You’ll be exposed to principles and strategies, but, more importantly, you’ll learn how to actually apply these abstract concepts by coding three different websites for three very different audiences. Lorem ipsum is dummy text used in laying out print, graphic or web designs Lorem ipsum"
+        ],
+        "syllabus": {
+            "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
+        },
+        "sections": {
+            "topics": {
+                "topic": [
+                    {
+                        "ttl": "introduction to react",
+                        "time": "1 week"
+                    },
+                    {
+                        "ttl": "overview of UX/I",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "javascript",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "github",
+                        "time": "2weeks"
+                    }
+                ]
+            }
+        },
+        "duration": "10h 30m",
+        "actual_price": 125
     },
     {
         "id": 3,
@@ -40,10 +129,55 @@
         "language": "china",
         "difficulty": "intermediate",
         "rating": "intermediate",
-        "reviews" : 10,
-        "price" : 100.00,
-        "color" : "#FF109F",
-        "duration" : "10h"
+        "reviews": 10,
+        "price": 100,
+        "color": "#FF109F",
+        "course": {
+            "title": "Full Stack Developer",
+            "image": "url",
+            "alttext": "react course",
+            "rating": 5,
+            "rated-users": 150,
+            "students": 100,
+            "duration": "2 weeks",
+            "lessons": "20 lessons",
+            "type": "IT",
+            "tags": [
+                "react",
+                "html",
+                "javascript"
+            ]
+        },
+        "info": [
+            "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designs. Lorem ipsum dolor sit amet, consectetuer adipiscingawr elit onec odio. Quisque volutpat mattis eros.",
+            "You’ll be exposed to principles and strategies, but, more importantly, you’ll learn how to actually apply these abstract concepts by coding three different websites for three very different audiences. Lorem ipsum is dummy text used in laying out print, graphic or web designs Lorem ipsum"
+        ],
+        "syllabus": {
+            "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
+        },
+        "sections": {
+            "topics": {
+                "topic": [
+                    {
+                        "ttl": "introduction to react",
+                        "time": "1 week"
+                    },
+                    {
+                        "ttl": "overview of UX/I",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "javascript",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "github",
+                        "time": "2weeks"
+                    }
+                ]
+            }
+        },
+        "duration": "10h"
     },
     {
         "id": 4,
@@ -55,11 +189,56 @@
         "language": "spanish",
         "difficulty": "beginner",
         "rating": "beginner",
-        "reviews" : 5,
-        "price" : 150.00,
-        "color" : "#FF109F",
-        "duration" : "25h 30m",
-        "actual_price" : 225.00
+        "reviews": 5,
+        "price": 150,
+        "color": "#FF109F",
+        "course": {
+            "title": "Full Stack Developer",
+            "image": "url",
+            "alttext": "react course",
+            "rating": 5,
+            "rated-users": 150,
+            "students": 100,
+            "duration": "2 weeks",
+            "lessons": "20 lessons",
+            "type": "IT",
+            "tags": [
+                "react",
+                "html",
+                "javascript"
+            ]
+        },
+        "info": [
+            "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designs. Lorem ipsum dolor sit amet, consectetuer adipiscingawr elit onec odio. Quisque volutpat mattis eros.",
+            "You’ll be exposed to principles and strategies, but, more importantly, you’ll learn how to actually apply these abstract concepts by coding three different websites for three very different audiences. Lorem ipsum is dummy text used in laying out print, graphic or web designs Lorem ipsum"
+        ],
+        "syllabus": {
+            "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
+        },
+        "sections": {
+            "topics": {
+                "topic": [
+                    {
+                        "ttl": "introduction to react",
+                        "time": "1 week"
+                    },
+                    {
+                        "ttl": "overview of UX/I",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "javascript",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "github",
+                        "time": "2weeks"
+                    }
+                ]
+            }
+        },
+        "duration": "25h 30m",
+        "actual_price": 225
     },
     {
         "id": 5,
@@ -71,10 +250,55 @@
         "language": "spanish",
         "difficulty": "expert",
         "rating": "expert",
-        "reviews" : 10,
-        "price" : 100.00,
-        "color" : "#04BC53",
-        "duration" : "2h 30m"
+        "reviews": 10,
+        "price": 100,
+        "color": "#04BC53",
+        "course": {
+            "title": "Full Stack Developer",
+            "image": "url",
+            "alttext": "react course",
+            "rating": 5,
+            "rated-users": 150,
+            "students": 100,
+            "duration": "2 weeks",
+            "lessons": "20 lessons",
+            "type": "IT",
+            "tags": [
+                "react",
+                "html",
+                "javascript"
+            ]
+        },
+        "info": [
+            "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designs. Lorem ipsum dolor sit amet, consectetuer adipiscingawr elit onec odio. Quisque volutpat mattis eros.",
+            "You’ll be exposed to principles and strategies, but, more importantly, you’ll learn how to actually apply these abstract concepts by coding three different websites for three very different audiences. Lorem ipsum is dummy text used in laying out print, graphic or web designs Lorem ipsum"
+        ],
+        "syllabus": {
+            "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
+        },
+        "sections": {
+            "topics": {
+                "topic": [
+                    {
+                        "ttl": "introduction to react",
+                        "time": "1 week"
+                    },
+                    {
+                        "ttl": "overview of UX/I",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "javascript",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "github",
+                        "time": "2weeks"
+                    }
+                ]
+            }
+        },
+        "duration": "2h 30m"
     },
     {
         "id": 6,
@@ -86,10 +310,55 @@
         "language": "china",
         "difficulty": "intermediate",
         "rating": "intermediate",
-        "reviews" : 10,
-        "price" : 100.00,
-        "color" : "#BC18E4",
-        "duration" : "6h 30m"
+        "reviews": 10,
+        "price": 100,
+        "color": "#BC18E4",
+        "course": {
+            "title": "Full Stack Developer",
+            "image": "url",
+            "alttext": "react course",
+            "rating": 5,
+            "rated-users": 150,
+            "students": 100,
+            "duration": "2 weeks",
+            "lessons": "20 lessons",
+            "type": "IT",
+            "tags": [
+                "react",
+                "html",
+                "javascript"
+            ]
+        },
+        "info": [
+            "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designs. Lorem ipsum dolor sit amet, consectetuer adipiscingawr elit onec odio. Quisque volutpat mattis eros.",
+            "You’ll be exposed to principles and strategies, but, more importantly, you’ll learn how to actually apply these abstract concepts by coding three different websites for three very different audiences. Lorem ipsum is dummy text used in laying out print, graphic or web designs Lorem ipsum"
+        ],
+        "syllabus": {
+            "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
+        },
+        "sections": {
+            "topics": {
+                "topic": [
+                    {
+                        "ttl": "introduction to react",
+                        "time": "1 week"
+                    },
+                    {
+                        "ttl": "overview of UX/I",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "javascript",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "github",
+                        "time": "2weeks"
+                    }
+                ]
+            }
+        },
+        "duration": "6h 30m"
     },
     {
         "id": 7,
@@ -101,11 +370,56 @@
         "language": "spanish",
         "difficulty": "expert",
         "rating": "expert",
-        "reviews" : 10,
-        "price" : 100.00,
-        "color" : "#FF109F",
-        "duration" : "1h 30m",
-        "actual_price" : 125.00
+        "reviews": 10,
+        "price": 100,
+        "color": "#FF109F",
+        "course": {
+            "title": "Full Stack Developer",
+            "image": "url",
+            "alttext": "react course",
+            "rating": 5,
+            "rated-users": 150,
+            "students": 100,
+            "duration": "2 weeks",
+            "lessons": "20 lessons",
+            "type": "IT",
+            "tags": [
+                "react",
+                "html",
+                "javascript"
+            ]
+        },
+        "info": [
+            "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designs. Lorem ipsum dolor sit amet, consectetuer adipiscingawr elit onec odio. Quisque volutpat mattis eros.",
+            "You’ll be exposed to principles and strategies, but, more importantly, you’ll learn how to actually apply these abstract concepts by coding three different websites for three very different audiences. Lorem ipsum is dummy text used in laying out print, graphic or web designs Lorem ipsum"
+        ],
+        "syllabus": {
+            "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
+        },
+        "sections": {
+            "topics": {
+                "topic": [
+                    {
+                        "ttl": "introduction to react",
+                        "time": "1 week"
+                    },
+                    {
+                        "ttl": "overview of UX/I",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "javascript",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "github",
+                        "time": "2weeks"
+                    }
+                ]
+            }
+        },
+        "duration": "1h 30m",
+        "actual_price": 125
     },
     {
         "id": 8,
@@ -117,10 +431,55 @@
         "language": "china",
         "difficulty": "beginner",
         "rating": "beginner",
-        "reviews" : 10,
-        "price" : 100.00,
-        "color" : "#FF109F",
-        "duration" : "30m"
+        "reviews": 10,
+        "price": 100,
+        "color": "#FF109F",
+        "course": {
+            "title": "Full Stack Developer",
+            "image": "url",
+            "alttext": "react course",
+            "rating": 5,
+            "rated-users": 150,
+            "students": 100,
+            "duration": "2 weeks",
+            "lessons": "20 lessons",
+            "type": "IT",
+            "tags": [
+                "react",
+                "html",
+                "javascript"
+            ]
+        },
+        "info": [
+            "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designs. Lorem ipsum dolor sit amet, consectetuer adipiscingawr elit onec odio. Quisque volutpat mattis eros.",
+            "You’ll be exposed to principles and strategies, but, more importantly, you’ll learn how to actually apply these abstract concepts by coding three different websites for three very different audiences. Lorem ipsum is dummy text used in laying out print, graphic or web designs Lorem ipsum"
+        ],
+        "syllabus": {
+            "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
+        },
+        "sections": {
+            "topics": {
+                "topic": [
+                    {
+                        "ttl": "introduction to react",
+                        "time": "1 week"
+                    },
+                    {
+                        "ttl": "overview of UX/I",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "javascript",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "github",
+                        "time": "2weeks"
+                    }
+                ]
+            }
+        },
+        "duration": "30m"
     },
     {
         "id": 9,
@@ -132,10 +491,55 @@
         "language": "spanish",
         "difficulty": "intermediate",
         "rating": "intermediate",
-        "reviews" : 10,
-        "price" : 100.00,
-        "color" : "#04BC53",
-        "duration" : "15h 45m"
+        "reviews": 10,
+        "price": 100,
+        "color": "#04BC53",
+        "course": {
+            "title": "Full Stack Developer",
+            "image": "url",
+            "alttext": "react course",
+            "rating": 5,
+            "rated-users": 150,
+            "students": 100,
+            "duration": "2 weeks",
+            "lessons": "20 lessons",
+            "type": "IT",
+            "tags": [
+                "react",
+                "html",
+                "javascript"
+            ]
+        },
+        "info": [
+            "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designs. Lorem ipsum dolor sit amet, consectetuer adipiscingawr elit onec odio. Quisque volutpat mattis eros.",
+            "You’ll be exposed to principles and strategies, but, more importantly, you’ll learn how to actually apply these abstract concepts by coding three different websites for three very different audiences. Lorem ipsum is dummy text used in laying out print, graphic or web designs Lorem ipsum"
+        ],
+        "syllabus": {
+            "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
+        },
+        "sections": {
+            "topics": {
+                "topic": [
+                    {
+                        "ttl": "introduction to react",
+                        "time": "1 week"
+                    },
+                    {
+                        "ttl": "overview of UX/I",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "javascript",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "github",
+                        "time": "2weeks"
+                    }
+                ]
+            }
+        },
+        "duration": "15h 45m"
     },
     {
         "id": 10,
@@ -147,10 +551,55 @@
         "language": "china",
         "difficulty": "china",
         "rating": "china",
-        "reviews" : 10,
-        "price" : 100.00,
-        "color" : "#BC18E4",
-        "duration" : "11h 30m"
+        "reviews": 10,
+        "price": 100,
+        "color": "#BC18E4",
+        "course": {
+            "title": "Full Stack Developer",
+            "image": "url",
+            "alttext": "react course",
+            "rating": 5,
+            "rated-users": 150,
+            "students": 100,
+            "duration": "2 weeks",
+            "lessons": "20 lessons",
+            "type": "IT",
+            "tags": [
+                "react",
+                "html",
+                "javascript"
+            ]
+        },
+        "info": [
+            "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designs. Lorem ipsum dolor sit amet, consectetuer adipiscingawr elit onec odio. Quisque volutpat mattis eros.",
+            "You’ll be exposed to principles and strategies, but, more importantly, you’ll learn how to actually apply these abstract concepts by coding three different websites for three very different audiences. Lorem ipsum is dummy text used in laying out print, graphic or web designs Lorem ipsum"
+        ],
+        "syllabus": {
+            "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
+        },
+        "sections": {
+            "topics": {
+                "topic": [
+                    {
+                        "ttl": "introduction to react",
+                        "time": "1 week"
+                    },
+                    {
+                        "ttl": "overview of UX/I",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "javascript",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "github",
+                        "time": "2weeks"
+                    }
+                ]
+            }
+        },
+        "duration": "11h 30m"
     },
     {
         "id": 11,
@@ -162,10 +611,55 @@
         "language": "english",
         "difficulty": "beginner",
         "rating": "beginner",
-        "reviews" : 10,
-        "price" : 100.00,
-        "color" : "#FF109F",
-        "duration" : "150h 30m"
+        "reviews": 10,
+        "price": 100,
+        "color": "#FF109F",
+        "course": {
+            "title": "Full Stack Developer",
+            "image": "url",
+            "alttext": "react course",
+            "rating": 5,
+            "rated-users": 150,
+            "students": 100,
+            "duration": "2 weeks",
+            "lessons": "20 lessons",
+            "type": "IT",
+            "tags": [
+                "react",
+                "html",
+                "javascript"
+            ]
+        },
+        "info": [
+            "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designs. Lorem ipsum dolor sit amet, consectetuer adipiscingawr elit onec odio. Quisque volutpat mattis eros.",
+            "You’ll be exposed to principles and strategies, but, more importantly, you’ll learn how to actually apply these abstract concepts by coding three different websites for three very different audiences. Lorem ipsum is dummy text used in laying out print, graphic or web designs Lorem ipsum"
+        ],
+        "syllabus": {
+            "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
+        },
+        "sections": {
+            "topics": {
+                "topic": [
+                    {
+                        "ttl": "introduction to react",
+                        "time": "1 week"
+                    },
+                    {
+                        "ttl": "overview of UX/I",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "javascript",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "github",
+                        "time": "2weeks"
+                    }
+                ]
+            }
+        },
+        "duration": "150h 30m"
     },
     {
         "id": 12,
@@ -177,9 +671,54 @@
         "language": "spanish",
         "difficulty": "intermediate",
         "rating": "intermediate",
-        "reviews" : 10,
-        "price" : 100.00,
-        "color" : "#FF109F",
-        "duration" : "1h"
+        "reviews": 10,
+        "price": 100,
+        "color": "#FF109F",
+        "course": {
+            "title": "Full Stack Developer",
+            "image": "url",
+            "alttext": "react course",
+            "rating": 5,
+            "rated-users": 150,
+            "students": 100,
+            "duration": "2 weeks",
+            "lessons": "20 lessons",
+            "type": "IT",
+            "tags": [
+                "react",
+                "html",
+                "javascript"
+            ]
+        },
+        "info": [
+            "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designs. Lorem ipsum dolor sit amet, consectetuer adipiscingawr elit onec odio. Quisque volutpat mattis eros.",
+            "You’ll be exposed to principles and strategies, but, more importantly, you’ll learn how to actually apply these abstract concepts by coding three different websites for three very different audiences. Lorem ipsum is dummy text used in laying out print, graphic or web designs Lorem ipsum"
+        ],
+        "syllabus": {
+            "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
+        },
+        "sections": {
+            "topics": {
+                "topic": [
+                    {
+                        "ttl": "introduction to react",
+                        "time": "1 week"
+                    },
+                    {
+                        "ttl": "overview of UX/I",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "javascript",
+                        "time": "2weeks"
+                    },
+                    {
+                        "ttl": "github",
+                        "time": "2weeks"
+                    }
+                ]
+            }
+        },
+        "duration": "1h"
     }
 ]

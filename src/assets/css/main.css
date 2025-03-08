@@ -527,7 +527,7 @@ textarea {
 .btn.white-btn svg path {
     stroke: var(--tg-theme-secondary);
 }
-.btn.btn-reset {
+.btm.btn-reset {
     height: 40px;
     line-height: 0;
 }
@@ -4158,7 +4158,6 @@ textarea {
 }
 
 .courses__item-two-content .courses__item-meta {
-    gap: 8px 22px;
     margin: 0 0;
 }
 
@@ -8317,6 +8316,10 @@ textarea {
     }
 }
 
+.dropdown-top-right {
+    margin-left: 10px;
+}
+
 .shop-top-right {
     position: relative;
     width: 190px;
@@ -8333,6 +8336,24 @@ textarea {
     .shop-top-right {
         margin: 0 0 0 auto;
     }
+}
+
+.dropdown-top-right #dropdown-basic {
+    background-color: var(--tg-common-color-gray);
+    border: none;
+    color: var(--tg-body-color);
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 4px;
+    outline: none;
+    padding: 12px 37px 9px 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    line-height: 1.2;
+    height: 40px;
 }
 
 .shop-top-right select {

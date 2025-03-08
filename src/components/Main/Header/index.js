@@ -40,7 +40,7 @@ export default class Header extends Component {
                         <a href="/"><img alt="Logo" src="/assets/images/logo/logo.png" /></a>
                       </div>
                       <div className="tgmobile__menu-outer">
-                        <MobileMenu />
+                        <MobileMenu path={path} />
                       </div>
                       <div className="social-links">
                         <ul className="list-wrap">
