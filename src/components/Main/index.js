@@ -13,88 +13,90 @@ import Contact from './Contact'
 import Breadcrumb from './Home/layout/Breadcrumb'
 
 export default class Help extends Component {
-static propTypes = {
-  selectedKey: PropTypes.string,
-}
-
-static defaultProps = {
-  selectedKey: '',
-}
-
-constructor(props){
-  super(props)
-  this.state = {
-    scroll: 0,
-    isMobileMenu: false,
-    selectedKey: this.getPathKey(),
+  static propTypes = {
+    selectedKey: PropTypes.string,
   }
-  this.handleMobileMenu = this.handleMobileMenu.bind(this)
-}
 
-componentDidMount() {
-  document.addEventListener('scroll', () => {
-    const scrollCheck = window.scrollY > 100
-    if (scrollCheck !== this.state.scroll) {
-      this.setState({ scroll: scrollCheck })
-    }
-  })
-
-  window.addEventListener('popstate', this.handlePathChange)
-}
-
-componentWillUnmount() {
-  window.removeEventListener('popstate', this.handlePathChange)
-}
-
-handleMobileMenu() {
-  this.setState((prevState) => ({
-    isMobileMenu: !prevState.isMobileMenu,
-  }), () => {
-    if (this.state.isMobileMenu) {
-      document.body.classList.add('mobile-menu-visible')
-    }
-    else {
-      document.body.classList.remove('mobile-menu-visible')
-    }
-  })
-}
-
-getPathKey() {
-  return window.location.pathname.replace('/', '') || 'home'
-}
-
-handlePathChange = () => {
-  this.setState({ selectedKey: this.getPathKey() })
-}
-
-getRenderComponent() {
-  const { selectedKey } = this.state
-  switch (selectedKey) {
-    case 'about':
-      return <About />
-    case 'blog':
-      return <Blog />
-    case 'course':
-      return <Course />
-    case 'contact':
-      return <Contact />
-    default:
-      return <Home />
+  static defaultProps = {
+    selectedKey: '',
   }
-}
 
-navigateTo = (path) => {
-  window.history.pushState({}, '', `/${path}`)
-  this.setState({ selectedKey: path })
-}
+  constructor(props) {
+    super(props)
+    this.state = {
+      scroll: 0,
+      isMobileMenu: false,
+      selectedKey: this.getPathKey().key,
+      selectedId: this.getPathKey().id,
+    }
+    this.handleMobileMenu = this.handleMobileMenu.bind(this)
+  }
 
-  updateSelectedKey = (selectedKey) => {
-    this.setState({
-      selectedKey,
+  componentDidMount() {
+    document.addEventListener('scroll', () => {
+      const scrollCheck = window.scrollY > 100
+      if (scrollCheck !== this.state.scroll) {
+        this.setState({ scroll: scrollCheck })
+      }
+    })
+
+    window.addEventListener('popstate', this.handlePathChange)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('popstate', this.handlePathChange)
+  }
+
+  handleMobileMenu() {
+    this.setState((prevState) => ({
+      isMobileMenu: !prevState.isMobileMenu,
+    }), () => {
+      if (this.state.isMobileMenu) {
+        document.body.classList.add('mobile-menu-visible')
+      }
+      else {
+        document.body.classList.remove('mobile-menu-visible')
+      }
     })
   }
 
-  render(){
+  getPathKey() {
+    const pathSegments = window.location.pathname.split('/').filter(Boolean)
+
+    const key = pathSegments[0] || 'home'
+    const id = pathSegments[1] || null
+
+    return { key, id }
+  }
+
+  handlePathChange = () => {
+    const { key, id } = this.getPathKey()
+    this.setState({ selectedKey: key, selectedId: id })
+  }
+
+  getRenderComponent() {
+    const { selectedKey, selectedId } = this.state
+
+    switch (selectedKey) {
+      case 'about':
+        return <About />
+      case 'blog':
+        return <Blog id={selectedId} />
+      case 'course':
+        return <Course id={selectedId} />
+      case 'contact':
+        return <Contact />
+      default:
+        return <Home />
+    }
+  }
+
+  navigateTo = (path) => {
+    window.history.pushState({}, '', `/${path}`)
+    this.handlePathChange()
+  }
+
+  render() {
     const { selectedKey, scroll, isMobileMenu } = this.state
     return (
       <Fragment>

@@ -1,74 +1,278 @@
 [
   {
-      "id": 1,
-      "title": "When aeunkno printer took galley of scrambled",
-      "img": "blog_thumb01.jpg",
-      "category": "EDUCATION",
-      "author": "Admin",
-      "date": "25 April 2023"
+    "id": 1,
+    "title": "When aeunkno printer took galley of scrambled",
+    "img": "blog_thumb01.jpg",
+    "category": "EDUCATION",
+    "author": "Admin",
+    "date": "10 Feb 2025",
+    "tags": ["react", "html", "javascript"],
+    "details": {
+      "info": [
+        "This tutorial will help you learn quickly and thoroughly...",
+        "You’ll be exposed to principles and strategies..."
+      ],
+      "sections": [
+        {
+          "title": "Why this coaching is needed",
+          "type": "normal",
+          "text": "Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."
+        },
+        {
+          "title": "Why this coaching is needed",
+          "type": "highlight",
+          "text": "urabitur varius eros rutrum consequat Mauris sollicitudin enim condimentum luctus enim justo non molestie nisl"
+        },
+        {
+          "title": "Why this coaching is needed",
+          "type": "heading",
+          "text": "During this program"
+        },
+        {
+          "title": "Why this coaching is needed",
+          "type": "list",
+          "text": "Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit.",
+          "list": ["Become a UX designer.", "Create quick wireframes.", "You will be able to add UX designe","Downloadable exercise files","Become a UI designer."]
+        },
+        {
+          "title": "Why this coaching is needed",
+          "type": "normal",
+          "text": "Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."
+        }
+      ]
+    }
   },
   {
-      "id": 2,
-      "title": "Full Stack GraphQL With Next.js And Vercel",
-      "img": "blog_thumb02.jpg",
-      "category": "COURSE",
-      "author": "Admin",
-      "date": "25 April 2023"
+    "id": 2,
+    "title": "Full Stack GraphQL With Next.js And Vercel",
+    "img": "blog_thumb02.jpg",
+    "category": "COURSE",
+    "author": "Admin",
+    "date": "10 Feb 2025",
+    "tags": ["react", "html", "javascript"],
+    "details": {
+      "info": [
+        "This tutorial will help you learn quickly and thoroughly...",
+        "You’ll be exposed to principles and strategies..."
+      ],
+      "sections": [
+        {
+          "title": "Why this coaching is needed",
+          "type": "normal",
+          "text": "You’ll be exposed to principles and strategies..."
+        },
+        {
+          "title": "Why this coaching is needed",
+          "type": "highlight",
+          "text": "Grursus mal suada faci lisis Lorem ipsum..."
+        },
+        {
+          "title": "Why this coaching is needed",
+          "type": "list",
+          "text": "Grursus mal suada faci lisis Lorem ipsum...",
+          "list": ["react", "java", "html"]
+        }
+      ]
+    }
   },
   {
-      "id": 3,
-      "title": "What Leonardo Teach us About Web Design",
-      "img": "blog_thumb03.jpg",
-      "category": "SKILL DEVELOPMENT",
-      "author": "Admin",
-      "date": "25 April 2023"
+    "id": 3,
+    "title": "What Leonardo Teach us About Web Design",
+    "img": "blog_thumb03.jpg",
+    "category": "SKILL DEVELOPMENT",
+    "author": "Admin",
+    "date": "10 Feb 2025",
+    "tags": ["react", "html", "javascript"],
+    "details": {
+      "info": [
+        "This tutorial will help you learn quickly and thoroughly...",
+        "You’ll be exposed to principles and strategies..."
+      ],
+      "sections": [
+        {
+          "title": "Why this coaching is needed",
+          "type": "normal",
+          "text": "You’ll be exposed to principles and strategies..."
+        },
+        {
+          "title": "Why this coaching is needed",
+          "type": "highlight",
+          "text": "Grursus mal suada faci lisis Lorem ipsum..."
+        },
+        {
+          "title": "Why this coaching is needed",
+          "type": "list",
+          "text": "Grursus mal suada faci lisis Lorem ipsum...",
+          "list": ["react", "java", "html"]
+        }
+      ]
+    }
   },
   {
-      "id": 4,
-      "title": "When aeunkno printer took galley of scrambled",
-      "img": "blog_thumb04.jpg",
-      "category": "Tech",
-      "author": "Admin",
-      "date": "25 April 2023"
+    "id": 4,
+    "title": "When aeunkno printer took galley of scrambled",
+    "img": "blog_thumb04.jpg",
+    "category": "TECH",
+    "author": "Admin",
+    "date": "10 Feb 2025",
+    "tags": ["react", "html", "javascript"],
+    "details": {
+      "info": [
+        "This tutorial will help you learn quickly and thoroughly...",
+        "You’ll be exposed to principles and strategies..."
+      ],
+      "sections": [
+        {
+          "title": "Why this coaching is needed",
+          "type": "normal",
+          "text": "You’ll be exposed to principles and strategies..."
+        },
+        {
+          "title": "Why this coaching is needed",
+          "type": "highlight",
+          "text": "Grursus mal suada faci lisis Lorem ipsum..."
+        },
+        {
+          "title": "Why this coaching is needed",
+          "type": "list",
+          "text": "Grursus mal suada faci lisis Lorem ipsum...",
+          "list": ["react", "java", "html"]
+        }
+      ]
+    }
   },
   {
-      "id": 5,
-      "title": "Full Stack GraphQL With Next.js And Vercel",
-      "img": "blog_thumb05.jpg",
-      "category": "EDUCATION",
-      "author": "Admin",
-      "date": "25 April 2023"
+    "id": 5,
+    "title": "Mastering JavaScript Fundamentals",
+    "img": "blog_thumb05.jpg",
+    "category": "PROGRAMMING",
+    "author": "Admin",
+    "date": "12 Feb 2025",
+    "tags": ["javascript", "programming", "coding"],
+    "details": {
+      "info": [
+        "A comprehensive guide to JavaScript basics and beyond...",
+        "Learn best practices for writing clean and efficient code."
+      ],
+      "sections": [
+        {
+          "title": "Introduction to JavaScript",
+          "type": "normal",
+          "text": "A deep dive into JavaScript and its core features."
+        },
+        {
+          "title": "Key JavaScript Concepts",
+          "type": "list",
+          "text": "Essential topics covered in the course.",
+          "list": ["Variables", "Functions", "Objects", "ES6+"]
+        }
+      ]
+    }
   },
   {
-      "id": 6,
-      "title": "What Leonardo Teach us About Web Design",
-      "img": "blog_thumb06.jpg",
-      "category": "COURSE",
-      "author": "Admin",
-      "date": "25 April 2023"
+    "id": 6,
+    "title": "Understanding React.js for Beginners",
+    "img": "blog_thumb06.jpg",
+    "category": "FRONTEND",
+    "author": "Admin",
+    "date": "15 Feb 2025",
+    "tags": ["react", "frontend", "javascript"],
+    "details": {
+      "info": [
+        "Learn React.js from scratch with practical examples...",
+        "Build dynamic and interactive user interfaces."
+      ],
+      "sections": [
+        {
+          "title": "Why Learn React?",
+          "type": "highlight",
+          "text": "React.js is a powerful library for building UI."
+        }
+      ]
+    }
   },
   {
-      "id": 7,
-      "title": "When aeunkno printer took galley of scrambled",
-      "img": "blog_thumb07.jpg",
-      "category": "SKILL DEVELOPMENT",
-      "author": "Admin",
-      "date": "25 April 2023"
+    "id": 7,
+    "title": "The Ultimate Guide to Vue.js 3",
+    "img": "blog_thumb07.jpg",
+    "category": "FRONTEND",
+    "author": "Admin",
+    "date": "18 Feb 2025",
+    "tags": ["vue", "frontend", "javascript"],
+    "details": {
+      "info": [
+        "A step-by-step guide to mastering Vue.js 3...",
+        "Learn reactive programming and state management."
+      ],
+      "sections": [
+        {
+          "title": "Why Learn Vue.js?",
+          "type": "highlight",
+          "text": "Vue.js is a progressive framework for building user interfaces."
+        },
+        {
+          "title": "Vue.js Core Features",
+          "type": "list",
+          "text": "Key concepts covered in this course.",
+          "list": ["Reactivity", "Components", "Vue Router", "Vuex"]
+        }
+      ]
+    }
   },
   {
-      "id": 8,
-      "title": "Full Stack GraphQL With Next.js And Vercel",
-      "img": "blog_thumb08.jpg",
-      "category": "Tech",
-      "author": "Admin",
-      "date": "25 April 2023"
+    "id": 8,
+    "title": "Building Scalable Apps with Node.js",
+    "img": "blog_thumb08.jpg",
+    "category": "BACKEND",
+    "author": "Admin",
+    "date": "20 Feb 2025",
+    "tags": ["node.js", "backend", "javascript"],
+    "details": {
+      "info": [
+        "Learn how to build fast and scalable backend applications...",
+        "Understand event-driven architecture and API development."
+      ],
+      "sections": [
+        {
+          "title": "Introduction to Node.js",
+          "type": "normal",
+          "text": "Node.js allows JavaScript to run on the server-side."
+        },
+        {
+          "title": "Node.js Features",
+          "type": "list",
+          "text": "What you will learn in this course.",
+          "list": ["Asynchronous programming", "Express.js", "MongoDB integration"]
+        }
+      ]
+    }
   },
   {
-      "id": 9,
-      "title": "What Leonardo Teach us About Web Design",
-      "img": "blog_thumb09.jpg",
-      "category": "Tech",
-      "author": "Admin",
-      "date": "25 April 2023"
+    "id": 9,
+    "title": "Mastering Full-Stack Development with MERN",
+    "img": "blog_thumb09.jpg",
+    "category": "FULL-STACK",
+    "author": "Admin",
+    "date": "25 Feb 2025",
+    "tags": ["mern", "full-stack", "react", "node.js"],
+    "details": {
+      "info": [
+        "This comprehensive course covers everything from frontend to backend...",
+        "Learn to build real-world applications with the MERN stack."
+      ],
+      "sections": [
+        {
+          "title": "Why Choose the MERN Stack?",
+          "type": "highlight",
+          "text": "MERN combines MongoDB, Express.js, React, and Node.js for full-stack development."
+        },
+        {
+          "title": "Core Topics in MERN",
+          "type": "list",
+          "text": "Essential technologies covered in this course.",
+          "list": ["React.js", "Node.js", "Express.js", "MongoDB"]
+        }
+      ]
+    }
   }
 ]
