@@ -16,7 +16,7 @@ export default class Footer extends Component {
                   <div className="footer-widget">
                     <div className="footer__about">
                       <div className="footer__logo logo">
-                        <a href="/"><img alt="img" src="/src/assets/images/logo/secondary_logo.png" /></a>
+                        <a href="/"><img alt="img" src="/assets/images/logo/secondary_logo.png" /></a>
                       </div>
                       <p>We are reachable by a telephone call,
                         WhatsApp message or send us a mail. You can walk-in to our facility to know more.</p>

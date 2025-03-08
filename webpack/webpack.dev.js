@@ -63,6 +63,7 @@ module.exports = {
     new BundleAnalyzerPlugin({ openAnalyzer: false, analyzerPort: 8889 }),
     new CopyWebpackPlugin([
       { from: 'src/assets', to: 'assets' },
+      { from: 'src/assets/fonts', to: 'fonts' },
     ]),
     extractSass,
   ],

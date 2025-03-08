@@ -125,6 +125,7 @@ module.exports = {
     new webpack.optimize.AggressiveMergingPlugin(),
     new CopyWebpackPlugin([
       { from: 'src/assets', to: 'assets' },
+      { from: 'src/assets/fonts', to: 'fonts' },
       { from: './index.html' },
     ]),
     extractSass,
