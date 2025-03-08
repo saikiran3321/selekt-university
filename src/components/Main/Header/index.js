@@ -4,7 +4,7 @@ import MobileMenu from '../MobileMenu'
 
 export default class Header extends Component {
   render() {
-    const { scroll, handleMobileMenu } = this.props
+    const { path, scroll, handleMobileMenu } = this.props
 
     return (
       <Fragment>
@@ -23,11 +23,11 @@ export default class Header extends Component {
                       </div>
                       <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
                         <ul className="navigation">
-                          <li className="header-btn active"><a href="/">Home</a></li>
-                          <li className="header-btn"><a href="/course">Courses</a></li>
-                          <li className="header-btn"><a href="/about">About Us</a></li>
-                          <li className="header-btn"><a href="/blog">Blog</a></li>
-                          <li className="header-btn"><a href="/contact">Contact</a></li>
+                          <li className={`header-btn ${path === 'home' ? 'active' : ''}`}><a href="/">Home</a></li>
+                          <li className={`header-btn ${path === 'course' ? 'active' : ''}`}><a href="/course">Courses</a></li>
+                          <li className={`header-btn ${path === 'about' ? 'active' : ''}`}><a href="/about">About Us</a></li>
+                          <li className={`header-btn ${path === 'blog' ? 'active' : ''}`}><a href="/blog">Blog</a></li>
+                          <li className={`header-btn ${path === 'contact' ? 'active' : ''}`}><a href="/contact">Contact</a></li>
                         </ul>
                       </div>
                     </nav>

@@ -24,8 +24,8 @@ export default function Cta1() {
                     consectetur adipiscing eliawe awUt elit ellus, luctus nec ullamcorper mattisBorem</p>
                 </div>
                 <div className="tg-button-wrap justify-content-center justify-content-md-end">
-                  <a className="btn white-btn tg-svg" to="/contact">
-                    <span className="text">Become an Instructor</span>
+                  <a className="btm bg-light tg-svg" href="/contact">
+                    <span className="text text-dark">Become an Instructor</span>
                     <img alt="btn-arrow" className="svg-icon" id="cta-btn" src="/assets/images/icons/btn-arrow.svg" />
                   </a>
                 </div>

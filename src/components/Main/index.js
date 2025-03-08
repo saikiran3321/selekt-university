@@ -103,6 +103,7 @@ export default class Help extends Component {
         <Header
           handleMobileMenu={this.handleMobileMenu}
           isMobileMenu={isMobileMenu}
+          path={selectedKey}
           scroll={scroll}
         />
         <main className="main-area fix">
