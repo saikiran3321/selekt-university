@@ -21,7 +21,6 @@ import './assets/css/select2.min.css'
 import './assets/css/spacing.css'
 import './assets/css/tg-cursor.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './assets/styles/style.scss'
 import { AppContainer, ToastContainer } from './containers'
 import { stores } from './store'
 
@@ -37,13 +36,13 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
+      AOS.init({
+        duration: 1000,
+        mirror: true,
+        once: true,
+        disable: 'mobile',
+      })
     }, 1000)
-    AOS.init({
-      duration: 1000,
-      mirror: true,
-      once: true,
-      disable: 'mobile',
-    })
   }, [])
 
   return (

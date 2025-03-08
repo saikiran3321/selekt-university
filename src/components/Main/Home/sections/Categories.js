@@ -1,6 +1,13 @@
 import React, { Fragment } from 'react'
-import { Link } from 'react-router-dom'
 import { Container, Row, Col } from 'react-bootstrap'
+
+const categories = [
+  { name: 'Graphic Design', courses: 19, icon: 'flaticon-graphic-design' },
+  { name: 'Marketing', courses: 10, icon: 'flaticon-email-marketing' },
+  { name: 'Finance', courses: 8, icon: 'flaticon-bars' },
+  { name: 'Development', courses: 13, icon: 'flaticon-programming-language' },
+  { name: 'Science', courses: 19, icon: 'flaticon-atom' },
+]
 
 export default function Categories1() {
   return (
@@ -14,7 +21,9 @@ export default function Categories1() {
                   <span className="sub-title">Unique online courses</span>
                   <h2 className="title tg-svg">
                     Browse By <span className="position-relative">
-                      <span className="svg-icon" data-svg-icon="/assets/images/icons/title_shape.svg" id="svg-5" />
+                      <img
+                        alt="title_shape" className="svg-icon" id="svg-5"
+                        src="/assets/images/icons/title_shape.svg" />
                       Categories
                     </span>
                   </h2>
@@ -22,65 +31,29 @@ export default function Categories1() {
                 <p>Borem ipsum dolor sit amet, consectetur adipiscing eliawe awut elit ellus,
                   luctus nec ullamcorper mattisBorem ipsum dolor awes atnse awctetur.</p>
                 <div className="tg-button-wrap justify-content-center justify-content-xl-start">
-                  <Link className="btm tg-svg" to="/course">
+                  <a className="btm tg-svg" href="/course">
                     <span className="text">All Categories</span>
-                    <span className="svg-icon" data-svg-icon="/assets/images/icons/btn-arrow.svg" id="svg-6" />
-                  </Link>
+                    <img alt="btn-arrow" className="svg-icon" id="svg-6" src="/assets/images/icons/btn-arrow.svg" />
+                  </a>
                 </div>
               </div>
             </Col>
             <Col lg={9} xl={7}>
               <div className="categories__wrap">
-                <img alt="shape" data-aos="fade-right" src="/assets/images/objects/categories_shape03.svg" />
-                <img alt="shape" data-aos="fade-left" src="/assets/images/objects/categories_shape04.svg" />
+                <img alt="shape" src="/assets/images/objects/categories_shape03.svg" />
+                <img alt="shape" src="/assets/images/objects/categories_shape04.svg" />
                 <Row className="justify-content-center row-cols-2 row-cols-md-3">
-                  <Col>
-                    <div className="categories__item">
-                      <Link to="/course">
-                        <i className="flaticon-graphic-design" />
-                        <span className="name">Graphic Design</span>
-                        <span className="courses">19 Courses</span>
-                      </Link>
-                    </div>
-                  </Col>
-                  <Col>
-                    <div className="categories__item">
-                      <Link to="/course">
-                        <i className="flaticon-email-marketing" />
-                        <span className="name">Marketing</span>
-                        <span className="courses">10 Courses</span>
-                      </Link>
-                    </div>
-                  </Col>
-                </Row>
-                <Row className="justify-content-center row-cols-2 row-cols-sm-3">
-                  <Col>
-                    <div className="categories__item">
-                      <Link to="/course">
-                        <i className="flaticon-bars" />
-                        <span className="name">Fiance</span>
-                        <span className="courses">08 Courses</span>
-                      </Link>
-                    </div>
-                  </Col>
-                  <Col>
-                    <div className="categories__item">
-                      <Link to="/course">
-                        <i className="flaticon-programming-language" />
-                        <span className="name">Development</span>
-                        <span className="courses">13 Courses</span>
-                      </Link>
-                    </div>
-                  </Col>
-                  <Col>
-                    <div className="categories__item">
-                      <Link to="/course">
-                        <i className="flaticon-atom" />
-                        <span className="name">Science</span>
-                        <span className="courses">19 Courses</span>
-                      </Link>
-                    </div>
-                  </Col>
+                  {categories.map((category) => (
+                    <Col key={category.name}>
+                      <div className="categories__item">
+                        <a href="/course">
+                          <i className={category.icon} />
+                          <span className="name">{category.name}</span>
+                          <span className="courses">{category.courses} Courses</span>
+                        </a>
+                      </div>
+                    </Col>
+                  ))}
                 </Row>
               </div>
             </Col>

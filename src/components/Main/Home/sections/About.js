@@ -37,8 +37,9 @@ export default class About extends Component {
                   <span className="sub-title">Get To Know About Us</span>
                   <h2 className="title tg-svg">Discover top
                     <span className="position-relative">
-                      <span className="svg-icon" data-svg-icon="/assets/images/icons/title_shape.svg" id="svg-3" />
-                      Instructors
+                      <img
+                        alt="title shape" className="svg-icon" id="svg-3"
+                        src="/assets/images/icons/title_shape.svg" />&nbsp;Instructors
                     </span>
                     Around the World
                   </h2>
@@ -86,7 +87,7 @@ export default class About extends Component {
                 <div className="tg-button-wrap">
                   <a className="btm tg-svg" href="/about-us">
                     <span className="text">Discover More</span>
-                    <span className="svg-icon" data-svg-icon="/assets/images/icons/btn-arrow.svg" id="about-btn" />
+                    <img alt="btn-arrow" className="svg-icon" id="about-btn" src="/assets/images/icons/btn-arrow.svg" />
                   </a>
                 </div>
               </div>

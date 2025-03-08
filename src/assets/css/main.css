@@ -483,6 +483,16 @@ textarea {
     gap: 10px;
 }
 
+.btm.tg-svg {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .btn .svg-icon {
     width: 14px;
     display: block;
@@ -1762,7 +1772,7 @@ textarea {
     display: block;
     margin: 0 0;
     border: none;
-    background-image: url(../images/icons/down_arrow.svg);
+    background-image: url(/assets/images/icons/down_arrow.svg);
     width: 12px;
     height: 6px;
 }
@@ -2235,8 +2245,12 @@ textarea {
     display: -webkit-flex;
     display: flex;
     align-items: flex-end;
-    padding: 163px 0 0;
+    padding: 100px 0 0;
     position: relative;
+}
+
+.header-bg {
+    padding: 100px 0 0;
 }
 
 @media (max-width: 1500px) {
@@ -2247,7 +2261,10 @@ textarea {
 
 @media (max-width: 1199.98px) {
     .banner-bg {
-        padding: 170px 0 0;
+        padding: 90px 0 0;
+    }
+    .header-bg {
+        padding: 80px 0 0;
     }
 }
 
@@ -3465,7 +3482,7 @@ textarea {
     position: absolute;
     left: 0;
     top: -5px;
-    background-image: url(../images/icons/blue_shape.svg);
+    background-image: url(/assets/images/icons/blue_shape.svg);
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
@@ -3512,7 +3529,7 @@ textarea {
 }
 
 .about__info-list-item:nth-child(4n+2) .icon::after {
-    background-image: url(../images/icons/green_shape.svg);
+    background-image: url(/assets/images/icons/green_shape.svg);
 }
 
 .about__info-list-item:nth-child(4n+3) .icon {
@@ -3520,7 +3537,7 @@ textarea {
 }
 
 .about__info-list-item:nth-child(4n+3) .icon::after {
-    background-image: url(../images/icons/purple_shape.svg);
+    background-image: url(/assets/images/icons/purple_shape.svg);
 }
 
 .about__info-list-item:nth-child(4n+3) i {
@@ -3533,7 +3550,7 @@ textarea {
 }
 
 .about__info-list-item:nth-child(4n+4) .icon::after {
-    background-image: url(../images/icons/red_shape.svg);
+    background-image: url(/assets/images/icons/red_shape.svg);
 }
 
 .about__info-list-item:hover .icon::after {
@@ -3941,7 +3958,6 @@ textarea {
 
 .courses__item-content .title a:hover {
     color: inherit;
-    background-size: 0 1.5px, 100% 1.5px;
 }
 
 .courses__item-meta {
@@ -3952,7 +3968,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0 22px;
+    justify-content: space-between;
     margin: 0 0 10px;
 }
 
@@ -4760,7 +4776,7 @@ textarea {
 .courses__details-curriculum .course-item .item-name::before {
     content: "";
     display: block;
-    background-image: url(../images/icons/play.svg);
+    background-image: url(/assets/images/icons/play.svg);
     width: 26px;
     height: 26px;
 }
@@ -5407,7 +5423,7 @@ textarea {
     display: block;
     font-family: var(--tg-heading-font-family);
     font-weight: var(--tg-fw-medium);
-    font-size: 18px;
+    font-size: 16px;
     color: var(--tg-heading-color);
     margin: 0 0 4px;
 }
@@ -7140,7 +7156,7 @@ textarea {
     14. CTA
 ===============================*/
 .cta__wrapper {
-    background-image: url(../images/bg/cta_bg.png);
+    background-image: url(/assets/images/bg/cta_bg.png);
     background-color: var(--tg-theme-primary);
     background-size: cover;
     background-position: center;
@@ -7540,7 +7556,7 @@ textarea {
 }
 
 .events__item-content .title {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.35;
     font-weight: var(--tg-fw-medium);
     margin: 0 0 17px;
@@ -8963,7 +8979,7 @@ textarea {
 }
 
 .blog__post-content {
-    padding: 25px 35px 40px;
+    padding: 25px 20px 40px;
 }
 
 @media (max-width: 1199.98px) {
@@ -9025,7 +9041,6 @@ textarea {
 
 .blog__post-content .title a:hover {
     color: inherit;
-    background-size: 0 1.5px, 100% 1.5px;
 }
 
 .blog__post-meta {

@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import { Link } from 'react-router-dom'
 import { Container, Row, Col } from 'react-bootstrap'
 
 export default function Cta1() {
@@ -13,9 +12,10 @@ export default function Cta1() {
                 <div className="section__title white-title">
                   <h2 className="title tg-svg">
                     Join us <span className="position-relative">
-                      <span
-                        className="svg-icon"
-                        data-svg-icon="assets/images/icons/title_shape.svg" id="svg-9" />Spread</span>
+                      <img
+                        alt="title_shape" className="svg-icon"
+                        id="svg-9"
+                        src="/assets/images/icons/title_shape.svg" />Spread</span>
                     Experiences
                   </h2>
                 </div>
@@ -24,10 +24,10 @@ export default function Cta1() {
                     consectetur adipiscing eliawe awUt elit ellus, luctus nec ullamcorper mattisBorem</p>
                 </div>
                 <div className="tg-button-wrap justify-content-center justify-content-md-end">
-                  <Link className="btn white-btn tg-svg" to="/contact">
+                  <a className="btn white-btn tg-svg" to="/contact">
                     <span className="text">Become an Instructor</span>
-                    <span className="svg-icon" data-svg-icon="assets/img/icons/btn-arrow.svg" id="cta-btn" />
-                  </Link>
+                    <img alt="btn-arrow" className="svg-icon" id="cta-btn" src="/assets/images/icons/btn-arrow.svg" />
+                  </a>
                 </div>
                 <img
                   alt="Object" className="object" data-aos="fade-down" data-aos-delay={400}

@@ -1,55 +1,56 @@
-import { useEffect, useRef, useState } from 'react'
+import React, { Component, createRef } from 'react'
 
-export default function Counter({ end, duration }) {
-    const [count, setCount] = useState(0)
-    const countRef = useRef(null)
-    const increment = end / duration
+export default class Counter extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { count: 0 }
+    this.countRef = createRef()
+    this.increment = this.props.duration
+      ? this.props.end / this.props.duration
+      : 1
+    this.interval = null
+  }
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    startCount()
-                    observer.disconnect()
-                }
-            },
-            { threshold: 0 }
-        )
-
-        if (countRef.current) {
-            observer.observe(countRef.current)
+  componentDidMount() {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          this.startCount()
+          observer.disconnect()
         }
-
-        return () => {
-            observer.disconnect()
-        }
-    }, [])
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCount((prevCount) => {
-                const newCount = prevCount + increment
-                if (newCount >= end) {
-                    clearInterval(interval)
-                    return end
-                } else {
-                    return newCount
-                }
-            })
-        }, 1000 / duration)
-
-        return () => {
-            clearInterval(interval)
-        }
-    }, [end, increment])
-
-    const startCount = () => {
-        setCount(0)
-    }
-
-    return (
-        <span ref={countRef}>
-            <span>{Math.round(count)}</span>
-        </span>
+      },
+      { threshold: 0.5 },
     )
+
+    if (this.countRef.current) {
+      observer.observe(this.countRef.current)
+    }
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval)
+  }
+
+  startCount = () => {
+    this.setState({ count: 0 }, () => {
+      this.interval = setInterval(() => {
+        this.setState((prevState) => {
+          const newCount = prevState.count + this.increment
+          if (newCount >= this.props.end) {
+            clearInterval(this.interval)
+            return { count: this.props.end }
+          }
+          return { count: newCount }
+        })
+      }, 1000 / this.props.duration)
+    })
+  };
+
+  render() {
+    return (
+      <span ref={this.countRef}>
+        <span>{Math.round(this.state.count)}</span>
+      </span>
+    )
+  }
 }

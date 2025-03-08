@@ -20,7 +20,7 @@ export default function Newsletter1() {
             <Col lg={7} xl={6}>
               <div className="newsletter__form">
                 <Form action="#">
-                  <Form.Control placeholder="Enter your email" required type="email" />
+                  <input placeholder="Enter your email" required type="email" />
                   <Button type="submit">Subscribe Now</Button>
                 </Form>
               </div>

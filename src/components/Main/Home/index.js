@@ -7,7 +7,7 @@ import Categories from './sections/Categories'
 import Testimonial from './sections/Testimonial'
 import Instructor from './sections/Instructor'
 import Cta from './sections/Cta'
-// import Blog from './sections/Blog'
+import Blog from './sections/Blog'
 import Newsletter from './sections/Newsletter'
 
 export default class Home extends Component {
@@ -23,7 +23,7 @@ export default class Home extends Component {
           <Testimonial />
           <Instructor />
           <Cta />
-          {/* <Blog /> */}
+          <Blog />
           <Newsletter />
         </main>
       </Fragment>

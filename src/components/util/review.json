@@ -1,0 +1,23 @@
+[
+  {
+    "id" : 1,
+    "image": "testimonial01.jpg",
+    "text": "“ This is an amazing platform! I learned so much.”",
+    "name": "John Doe",
+    "designation": "Web Developer"
+  },
+  {
+    "id" : 2,
+    "image": "testimonial02.jpg",
+    "text": "“ The best learning experience I ever had!”",
+    "name": "Jane Smith",
+    "designation": "Software Engineer"
+  },
+  {
+    "id" : 3,
+    "image": "banner_img.png",
+    "text": "“ A fantastic resource for upskilling and career growth.”",
+    "name": "Mike Johnson",
+    "designation": "Product Manager"
+  }
+]

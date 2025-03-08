@@ -10,6 +10,7 @@ import About from './About'
 import Blog from './Blog'
 import Course from './Course'
 import Contact from './Contact'
+import Breadcrumb from './Home/layout/Breadcrumb'
 
 export default class Help extends Component {
 static propTypes = {
@@ -94,7 +95,7 @@ navigateTo = (path) => {
   }
 
   render(){
-    const { scroll, isMobileMenu } = this.state
+    const { selectedKey, scroll, isMobileMenu } = this.state
     return (
       <Fragment>
         <Header
@@ -102,7 +103,10 @@ navigateTo = (path) => {
           isMobileMenu={isMobileMenu}
           scroll={scroll}
         />
-        {this.getRenderComponent()}
+        <main className="main-area fix">
+          {selectedKey !== 'home' && <Breadcrumb breadcrumbTitle={selectedKey} />}
+          {this.getRenderComponent()}
+        </main>
         <Footer />
         <BackToTop />
         <DataBg />

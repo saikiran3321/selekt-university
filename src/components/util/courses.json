@@ -10,8 +10,9 @@
         "difficulty": "beginner",
         "rating": "beginner",
         "reviews" : 5,
-        "price" : 75,
-        "color" : "#04BC53"
+        "price" : 75.00,
+        "color" : "#04BC53",
+        "duration" : "12h 30m"
     },
     {
         "id": 2,
@@ -24,8 +25,10 @@
         "difficulty": "intermediate",
         "rating": "intermediate",
         "reviews" : 8,
-        "price" : 100,
-        "color" : "#BC18E4"
+        "price" : 100.00,
+        "color" : "#BC18E4",
+        "duration" : "10h 30m",
+        "actual_price" : 125.00
     },
     {
         "id": 3,
@@ -38,8 +41,9 @@
         "difficulty": "intermediate",
         "rating": "intermediate",
         "reviews" : 10,
-        "price" : 100,
-        "color" : "#FF109F"
+        "price" : 100.00,
+        "color" : "#FF109F",
+        "duration" : "10h"
     },
     {
         "id": 4,
@@ -52,8 +56,10 @@
         "difficulty": "beginner",
         "rating": "beginner",
         "reviews" : 5,
-        "price" : 150,
-        "color" : "#FF109F"
+        "price" : 150.00,
+        "color" : "#FF109F",
+        "duration" : "25h 30m",
+        "actual_price" : 225.00
     },
     {
         "id": 5,
@@ -66,8 +72,9 @@
         "difficulty": "expert",
         "rating": "expert",
         "reviews" : 10,
-        "price" : 100,
-        "color" : "#04BC53"
+        "price" : 100.00,
+        "color" : "#04BC53",
+        "duration" : "2h 30m"
     },
     {
         "id": 6,
@@ -80,8 +87,9 @@
         "difficulty": "intermediate",
         "rating": "intermediate",
         "reviews" : 10,
-        "price" : 100,
-        "color" : "#BC18E4"
+        "price" : 100.00,
+        "color" : "#BC18E4",
+        "duration" : "6h 30m"
     },
     {
         "id": 7,
@@ -94,8 +102,10 @@
         "difficulty": "expert",
         "rating": "expert",
         "reviews" : 10,
-        "price" : 100,
-        "color" : "#FF109F"
+        "price" : 100.00,
+        "color" : "#FF109F",
+        "duration" : "1h 30m",
+        "actual_price" : 125.00
     },
     {
         "id": 8,
@@ -108,8 +118,9 @@
         "difficulty": "beginner",
         "rating": "beginner",
         "reviews" : 10,
-        "price" : 100,
-        "color" : "#FF109F"
+        "price" : 100.00,
+        "color" : "#FF109F",
+        "duration" : "30m"
     },
     {
         "id": 9,
@@ -122,8 +133,9 @@
         "difficulty": "intermediate",
         "rating": "intermediate",
         "reviews" : 10,
-        "price" : 100,
-        "color" : "#04BC53"
+        "price" : 100.00,
+        "color" : "#04BC53",
+        "duration" : "15h 45m"
     },
     {
         "id": 10,
@@ -136,8 +148,9 @@
         "difficulty": "china",
         "rating": "china",
         "reviews" : 10,
-        "price" : 100,
-        "color" : "#BC18E4"
+        "price" : 100.00,
+        "color" : "#BC18E4",
+        "duration" : "11h 30m"
     },
     {
         "id": 11,
@@ -150,8 +163,9 @@
         "difficulty": "beginner",
         "rating": "beginner",
         "reviews" : 10,
-        "price" : 100,
-        "color" : "#FF109F"
+        "price" : 100.00,
+        "color" : "#FF109F",
+        "duration" : "150h 30m"
     },
     {
         "id": 12,
@@ -164,7 +178,8 @@
         "difficulty": "intermediate",
         "rating": "intermediate",
         "reviews" : 10,
-        "price" : 100,
-        "color" : "#FF109F"
+        "price" : 100.00,
+        "color" : "#FF109F",
+        "duration" : "1h"
     }
 ]

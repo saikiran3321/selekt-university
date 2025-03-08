@@ -16,8 +16,10 @@ export default class Banner extends Component {
                 <span className="sub-title">100% Satisfaction Guarantee</span>
                 <h3 className="title tg-svg">Learn
                   <span className="position-relative">
-                    <span className="svg-icon" data-svg-icon="/assets/images/icons/title_shape.svg" id="svg-2" />
-                    Skills</span> From Our Top Instructors
+                    <img
+                      alt="shape" className="svg-icon" id="svg-2"
+                      src="/assets/images/icons/title_shape.svg" /> Skills
+                  </span>From Our Top Instructors
                 </h3>
                 <p>No pre-recorded videos—learn live in a hybrid mode,
                   either in the classroom or from home. You will practice hands-on projects in our cloud servers,
@@ -25,7 +27,7 @@ export default class Banner extends Component {
                 <div className="banner__btn-wrap">
                   <div className="tg-button-wrap">
                     <a className="btm tg-svg" href="/course"><span className="text">Explore Courses</span>
-                      <span className="svg-icon" data-svg-icon="/assets/images/icons/btn-arrow.svg" id="svg-1" />
+                      <img alt="arrow" className="svg-icon me-2" id="svg-1" src="/assets/images/icons/btn-arrow.svg" />
                     </a>
                   </div>
                   <div className="banner__phone">

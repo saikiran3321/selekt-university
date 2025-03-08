@@ -13,21 +13,21 @@ export default function Instructor1() {
                 <div className="section__title text-md-start">
                   <span className="sub-title">Our Qualified People Matter</span>
                   <h2 className="title tg-svg">Top <span className="position-relative">
-                    <span
+                    <img
+                      alt="title_shape"
                       className="svg-icon"
-                      data-svg-icon="/assets/images/icons/title_shape.svg"
-                      id="svg-8" />Class</span>
+                      id="svg-8"
+                      src="/assets/images/icons/title_shape.svg" />Class</span>
                     instructor</h2>
                 </div>
               </Col>
               <Col md={4}>
                 <div className="tg-button-wrap justify-content-center justify-content-md-end">
-                  <Link className="btm tg-svg" to="/"><span className="text">All Instructors</span>
-                    <span
-                      className="svg-icon"
-                      data-svg-icon="/assets/images/icons/btn-arrow.svg"
-                      id="instructor-btn" />
-                  </Link>
+                  <a className="btm tg-svg" href="/"><span className="text">All Instructors
+                    <img
+                      alt="btn-arrow" className="svg-icon ml-2" id="svg-6"
+                      src="/assets/images/icons/btn-arrow.svg" /></span>
+                  </a>
                 </div>
               </Col>
             </Row>
