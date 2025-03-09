@@ -33,7 +33,7 @@ export default class Contact extends Component {
                       </li>
                       <li>
                         <div className="icon">
-                          <i className="flaticon-whatsapp" />
+                          <i className="fab fa-whatsapp" />
                         </div>
                         <div className="content">
                           <a href="tel:9121900900">+91 9121 900 900</a>

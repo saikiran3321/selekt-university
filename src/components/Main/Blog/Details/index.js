@@ -24,9 +24,19 @@ export default class BlogDetails extends Component {
                       </ul>
                       {post.details.sections.map((section) => {
                         if (!post.id) return null
-                        const sectionKey = `${post.id}-${section.type}-${section.text.substring(0, 10)}-${Math.random() * 10}`
+                        const sectionKey = `${post.id}-${section.type}-${Math.random() * 10}-${Math.random() * 10}`
                         if (section.type === 'normal') {
-                          return <p key={sectionKey}>{section.text}</p>
+                          if (typeof section.text === 'string') {
+                            return <p key={sectionKey}>{section.text}</p>
+                          }
+
+                          if (Array.isArray(section.text)) {
+                            return section.text.map((listkey) => (
+                              <p key={`${sectionKey}-${Math.random()}`}>{listkey}</p>
+                            ))
+                          }
+
+                          return null
                         }
                         if (section.type === 'heading') {
                           return <h4 key={sectionKey} className="inner-title">{section.text}</h4>
