@@ -2,6 +2,46 @@ import React, { Component, Fragment } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
 export default class Contact extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      name: '',
+      email: '',
+      mobile: '',
+      subject: '',
+      message: '',
+      error: '',
+    }
+  }
+
+  handleChange = (event) => {
+    this.setState({ [event.target.name]: event.target.value })
+  };
+
+  sendToWhatsApp = () => {
+    const { name, email, mobile, subject, message } = this.state
+    const phoneNumber = '9121900900'
+
+    if (!name || !email || !mobile || !subject || !message) {
+      this.setState({ error: 'All fields are required before sending.' })
+      return
+    }
+
+    const text = `Hello, I am ${name}%0AEmail: ${email}%0AMobile: ${mobile}%0ASubject: ${subject}%0AMessage: ${message}`
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${text}`
+
+    window.open(whatsappURL, '_blank')
+
+    this.setState({
+      name: '',
+      email: '',
+      mobile: '',
+      subject: '',
+      message: '',
+      error: '',
+    })
+  };
+
   render() {
     return (
       <Fragment>
@@ -53,35 +93,46 @@ export default class Contact extends Component {
                 <Col lg={7}>
                   <div className="contact-form-wrap">
                     <h4 className="title">Get in Touch</h4>
+                    {this.state.error && <p style={{ color: 'red' }}>{this.state.error}</p>}
                     <form action="" id="contact-form" method="POST">
                       <div className="row">
                         <div className="col-md-6">
                           <div className="form-group">
-                            <input className="form-control" name="name" placeholder="Name *" required type="text" />
+                            <input
+                              className="form-control" name="name" onChange={this.handleChange}
+                              placeholder="Name *" required type="text" value={this.state.name} />
                           </div>
                         </div>
                         <div className="col-md-6">
                           <div className="form-group">
-                            <input className="form-control" name="email" placeholder="E-mail *" required type="email" />
+                            <input
+                              className="form-control" name="email" onChange={this.handleChange}
+                              placeholder="E-mail *" required type="email" value={this.state.email} />
                           </div>
                         </div>
                         <div className="col-md-6">
                           <div className="form-group">
-                            <input className="form-control" name="phone" placeholder="Phone *" required type="number" />
+                            <input
+                              className="form-control" maxLength={10} minLength={10}
+                              name="mobile" onChange={this.handleChange} placeholder="Mobile *" required type="tel"
+                              value={this.state.mobile} />
                           </div>
                         </div>
                         <div className="col-md-6">
                           <div className="form-group">
                             <input
                               className="form-control" name="subject"
-                              placeholder="Your Subject *" required type="text" />
+                              onChange={this.handleChange} placeholder="Your Subject *" required
+                              type="text" value={this.state.subject} />
                           </div>
                         </div>
                       </div>
                       <div className="form-group">
-                        <textarea className="form-control" name="message" placeholder="Message" required />
+                        <textarea
+                          className="form-control" name="message" onChange={this.handleChange}
+                          placeholder="Message" required value={this.state.message} />
                       </div>
-                      <button className="btm" type="submit">Send Message</button>
+                      <button className="btm" onClick={this.sendToWhatsApp} type="submit">Send Message</button>
                     </form>
                     <p className="ajax-response mb-0" />
                   </div>
