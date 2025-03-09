@@ -24,12 +24,12 @@ export default class CourseCard extends Component {
           </h5>
           <ul className="courses__item-meta list-wrap">
             <li><i className="flaticon-file" /> 05</li>
-            <li><i className="flaticon-timer" /> {item.course.duration}</li>
+            <li><i className="flaticon-timer" /> {item.duration}</li>
             <li><i className="flaticon-user-1" /> {item.course.students}</li>
           </ul>
           <div className="courses__item-bottom">
             <div className="course__price">
-              <h3 className="price">${item.price}.00</h3>
+              <h3 className="price">&#8377;{item.price}</h3>
             </div>
             <div className="courses__item-rating">
               <i className="fas fa-star" />

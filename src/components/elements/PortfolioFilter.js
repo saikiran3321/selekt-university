@@ -130,8 +130,8 @@ export default class PortfolioFilter extends Component {
                         <a href="/instructor-details">{item.instructor}</a>
                       </div>
                       <h5 className="price">
-                        {item.actual_price && <del>${item.actual_price}</del>}
-                        ${item.price}
+                        {item.actual_price && <del>&#8377;{item.actual_price}</del>}
+                        &#8377;{item.price}
                       </h5>
                     </div>
                   </div>

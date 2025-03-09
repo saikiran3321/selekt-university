@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 
 export default class CourseSingle extends Component {
@@ -49,7 +49,7 @@ export default class CourseSingle extends Component {
                       </div>
                     </li>
                     <li><i className="flaticon-file" />{course.course.lessons}</li>
-                    <li><i className="flaticon-timer" />{course.course.duration}</li>
+                    <li><i className="flaticon-timer" />{course.duration}</li>
                     <li><i className="flaticon-user-1" />{course.course.students}</li>
                     <li>
                       <div className="rating">
@@ -85,223 +85,85 @@ export default class CourseSingle extends Component {
                   <div className="tab-content" id="myTabContent">
                     <div className={`tab-pane ${activeIndex === 1 ? 'active' : ''}`}>
                       <div className="courses__details-content">
-                        <p>This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum
-                          as it is sometimes known, is dummy text used in laying out print, graphic or web
-                          designs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque volutpat
-                          mattis eros.</p>
-                        <p>You’ll be exposed to principles and strategies, but, more importantly, you’ll learn
-                          how to actually apply these abstract concepts by coding three different websites for
-                          three very different audiences. Lorem ipsum is dummy text used in laying out print,
-                          graphic or web designs.</p>
+                        {course.info.map((infotext) => {
+                          const infoid = Math.random() * 10
+                          return <p key={infoid}>{infotext}</p>
+                        })}
                         <div className="courses__details-inner">
-                          <h3 className="title">What Will You Learn?</h3>
-                          <p>This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum
-                            as it is sometimes known, is dummy text used in laying out print, graphic or web
-                            designs.</p>
-                          <div className="event-details-list">
-                            <ul className="list-wrap">
-                              <li><i className="fas fa-check-circle" />
-                                <p className="text">Become a UX designer.</p>
-                              </li>
-                              <li><i className="fas fa-check-circle" />
-                                <p className="text">Create quick wireframes.</p>
-                              </li>
-                              <li><i className="fas fa-check-circle" />
-                                <p className="text">You will be able to add UX design.</p>
-                              </li>
-                              <li><i className="fas fa-check-circle" />
-                                <p className="text">Downloadable exercise files.</p>
-                              </li>
-                              <li><i className="fas fa-check-circle" />
-                                <p className="text">Become a UI designer.</p>
-                              </li>
-                              <li><i className="fas fa-check-circle" />
-                                <p className="text">Build a UX project from beginning to end.</p>
-                              </li>
-                              <li><i className="fas fa-check-circle" />
-                                <p className="text">Build and test a full website design.</p>
-                              </li>
-                              <li><i className="fas fa-check-circle" />
-                                <p className="text">Learn to design websites and mobile apps.</p>
-                              </li>
-                              <li><i className="fas fa-check-circle" />
-                                <p className="text">Create your first UX brief and persona.</p>
-                              </li>
-                              <li><i className="fas fa-check-circle" />
-                                <p className="text">All the techniques used by UX professionals.</p>
-                              </li>
-                              <li><i className="fas fa-check-circle" />
-                                <p className="text">How to use premade UI kits.</p>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div className="courses__details-inner">
-                          <h3 className="title">Requirements</h3>
-                          <p>This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum
-                            as it is sometimes</p>
-                          <div className="event-details-list">
-                            <ul className="list-wrap">
-                              <li><i className="fas fa-check-circle" />
-                                <p className="text">Become a UX designer.</p>
-                              </li>
-                              <li><i className="fas fa-check-circle" />
-                                <p className="text">Create quick wireframes.</p>
-                              </li>
-                              <li><i className="fas fa-check-circle" />
-                                <p className="text">You will be able to add UX design.</p>
-                              </li>
-                              <li><i className="fas fa-check-circle" />
-                                <p className="text">Downloadable exercise files.</p>
-                              </li>
-                              <li><i className="fas fa-check-circle" />
-                                <p className="text">Become a UI designer.</p>
-                              </li>
-                            </ul>
-                          </div>
+                          {course.sections.section.map((section) => {
+                            const sectionKey = `${section.type}-${Math.random() * 10}-${Math.random() * 10}`
+                            if (section.type === 'normal') {
+                              if (typeof section.text === 'string') {
+                                return <p key={sectionKey}>{section.text}</p>
+                              }
+
+                              if (Array.isArray(section.text)) {
+                                return section.text.map((listkey) => (
+                                  <p key={`${sectionKey}-${Math.random()}`}>{listkey}</p>
+                                ))
+                              }
+
+                              return null
+                            }
+                            if (section.type === 'heading') {
+                              return <h4 key={sectionKey} className="inner-title">{section.text}</h4>
+                            }
+                            if (section.type === 'highlight') {
+                              return <blockquote key={sectionKey}><p>“ {section.text} ”</p></blockquote>
+                            }
+                            if (section.type === 'list') {
+                              return (
+                                <Fragment key={sectionKey}>
+                                  <p>{section.text}</p>
+                                  <div className="event-details-list">
+                                    <ul className="list-wrap">
+                                      {section.list.map((listItem) => (
+                                        <li key={`${sectionKey}-${listItem}`}><i className="fas fa-check-circle" /><p className="text">{listItem}</p></li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                </Fragment>
+                              )
+                            }
+                            return null
+                          })}
                         </div>
                       </div>
                       <div className="courses__details-curriculum">
                         <h4 className="title">Curriculum</h4>
                         <div className="accordion" id="accordionExample">
-                          <div className="accordion-item">
-                            <h2 className="accordion-header mb-0">
-                              <button className={`accordion-button w-100 ${this.state.isActive.key === 1 && this.state.isActive.status ? 'collapsed' : ''}`} onClick={() => this.handleToggle(1)} style={{ textAlign: 'left' }} type="button">
-                                Introduction
-                              </button>
-                            </h2>
-                            <div className={`accordion-collapse collapse ${this.state.isActive.key === 1 && this.state.isActive.status ? 'show' : ''}`}>
-                              <div className="accordion-body">
-                                <ul className="list-wrap">
-                                  <li className="course-item">
-                                    <a className="course-item-link" href="/course">
-                                      <span className="item-name">Course Installation</span>
-                                      <div className="course-item-meta">
-                                        <span className="item-meta duration">07:48</span>
-                                        <span className="item-meta course-item-status">
-                                          <img alt="icon" src="/assets/images/icons/lock.svg" />
-                                        </span>
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li className="course-item">
-                                    <a className="course-item-link" href="/course">
-                                      <span className="item-name">Create a Simple React App</span>
-                                      <div className="course-item-meta">
-                                        <span className="item-meta duration">07:48</span>
-                                        <span className="item-meta course-item-status">
-                                          <img alt="icon" src="/assets/images/icons/lock.svg" />
-                                        </span>
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li className="course-item">
-                                    <a className="course-item-link" href="/course">
-                                      <span className="item-name">React for the Rest of us</span>
-                                      <div className="course-item-meta">
-                                        <span className="item-meta duration">10:48</span>
-                                        <span className="item-meta course-item-status">
-                                          <img alt="icon" src="/assets/images/icons/lock.svg" />
-                                        </span>
-                                      </div>
-                                    </a>
-                                  </li>
-                                </ul>
+                          {course.sections.topics.map((topic) => (
+                            <div key={topic.id} className="accordion-item">
+                              <h2 className="accordion-header mb-0">
+                                <button className={`accordion-button w-100 ${this.state.isActive.key === topic.id && this.state.isActive.status ? 'collapsed' : ''}`} onClick={() => this.handleToggle(topic.id)} style={{ textAlign: 'left' }} type="button">
+                                  {topic.ttl}
+                                </button>
+                              </h2>
+                              <div className={`accordion-collapse collapse ${this.state.isActive.key === topic.id && this.state.isActive.status ? 'show' : ''}`}>
+                                <div className="accordion-body">
+                                  <ul className="list-wrap">
+                                    {topic.subtopic.map((sub_topic) => (
+                                      <li key={sub_topic.id} className="course-item">
+                                        <a className="course-item-link" href="/course">
+                                          <span className="item-name">{sub_topic.title}</span>
+                                          <div className="course-item-meta">
+                                            <span className="item-meta duration">{sub_topic.duraction}</span>
+                                            {sub_topic.lock === true ? (
+                                              <span className="item-meta course-item-status">
+                                                <img alt="icon" src="/assets/images/icons/lock.svg" />
+                                              </span>
+                                            )
+                                              : null
+                                            }
+                                          </div>
+                                        </a>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div className="accordion-item">
-                            <h2 className="accordion-header mb-0">
-                              <button className={`accordion-button w-100 ${this.state.isActive.key === 2 && this.state.isActive.status ? 'collapsed' : ''}`} onClick={() => this.handleToggle(2)} style={{ textAlign: 'left' }} type="button">
-                                Capacitance and Inductance
-                              </button>
-                            </h2>
-                            <div className={`accordion-collapse collapse ${this.state.isActive.key === 2 && this.state.isActive.status ? 'show' : ''}`}>
-                              <div className="accordion-body">
-                                <ul className="list-wrap">
-                                  <li className="course-item">
-                                    <a className="course-item-link" href="/course">
-                                      <span className="item-name">Course Installation</span>
-                                      <div className="course-item-meta">
-                                        <span className="item-meta duration">07:48</span>
-                                        <span className="item-meta course-item-status">
-                                          <img alt="icon" src="/assets/images/icons/lock.svg" />
-                                        </span>
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li className="course-item">
-                                    <a className="course-item-link" href="/course">
-                                      <span className="item-name">Create a Simple React App</span>
-                                      <div className="course-item-meta">
-                                        <span className="item-meta duration">07:48</span>
-                                        <span className="item-meta course-item-status">
-                                          <img alt="icon" src="/assets/images/icons/lock.svg" />
-                                        </span>
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li className="course-item">
-                                    <a className="course-item-link" href="/course">
-                                      <span className="item-name">React for the Rest of us</span>
-                                      <div className="course-item-meta">
-                                        <span className="item-meta duration">10:48</span>
-                                        <span className="item-meta course-item-status">
-                                          <img alt="icon" src="/assets/images/icons/lock.svg" />
-                                        </span>
-                                      </div>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="accordion-item">
-                            <h2 className="accordion-header m-0">
-                              <button className={`accordion-button w-100 ${this.state.isActive.key === 3 && this.state.isActive.status ? 'collapsed' : ''}`} onClick={() => this.handleToggle(3)} style={{ textAlign: 'left' }} type="button">
-                                Final Audit
-                              </button>
-                            </h2>
-                            <div className={`accordion-collapse collapse ${this.state.isActive.key === 3 && this.state.isActive.status ? 'show' : ''}`}>
-                              <div className="accordion-body">
-                                <ul className="list-wrap">
-                                  <li className="course-item">
-                                    <a className="course-item-link" href="/course">
-                                      <span className="item-name">Course Installation</span>
-                                      <div className="course-item-meta">
-                                        <span className="item-meta duration">07:48</span>
-                                        <span className="item-meta course-item-status">
-                                          <img alt="icon" src="/assets/images/icons/lock.svg" />
-                                        </span>
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li className="course-item">
-                                    <a className="course-item-link" href="/course">
-                                      <span className="item-name">Create a Simple React App</span>
-                                      <div className="course-item-meta">
-                                        <span className="item-meta duration">07:48</span>
-                                        <span className="item-meta course-item-status">
-                                          <img alt="icon" src="/assets/images/icons/lock.svg" />
-                                        </span>
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li className="course-item">
-                                    <a className="course-item-link" href="/course">
-                                      <span className="item-name">React for the Rest of us</span>
-                                      <div className="course-item-meta">
-                                        <span className="item-meta duration">10:48</span>
-                                        <span className="item-meta course-item-status">
-                                          <img alt="icon" src="/assets/images/icons/lock.svg" />
-                                        </span>
-                                      </div>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
+                          ))}
                         </div>
                       </div>
                       <div className="courses__details-instructors">
@@ -529,16 +391,19 @@ export default class CourseSingle extends Component {
                       <a alt="video" className="popup-video" href="/course"><i className="fas fa-play" /></a>
                     </div>
                     <div className="event-cost-wrap">
-                      <h4 className="price"><strong>Costs:</strong>$25.00 <span>$84.99</span></h4>
+                      <h4 className="price"><strong>Costs:</strong>&#8377;{course.price}
+                        {course.actual_price && <span>&#8377;{course.actual_price}</span>}</h4>
                       <a className="btn" href="/course">Enroll This Now</a>
                       <div className="event-information-wrap">
                         <h6 className="title">Include This Course</h6>
                         <ul className="list-wrap">
-                          <li><i className="flaticon-timer" />Duration <span>5.2 Hours</span></li>
+                          <li><i className="flaticon-timer" />Duration <span>{course.duration}</span></li>
                           <li><i className="flaticon-file" />Estimated Seat <span>250</span></li>
                           <li><i className="flaticon-user-1" />Joined <span>190</span></li>
-                          <li><i className="flaticon-bars" />Laguage <span>English</span></li>
-                          <li><i className="flaticon-flash" />Category <span>Desing</span></li>
+                          <li><i className="flaticon-bars" />Laguage <span>
+                            {course.language.charAt(0).toUpperCase() + course.language.slice(1)}</span></li>
+                          <li><i className="flaticon-flash" />Category <span>
+                            {course.category.charAt(0).toUpperCase() + course.category.slice(1)}</span></li>
                           <li><i className="flaticon-share" />Share
                             <ul className="list-wrap event-social">
                               <li><a alt="facebook" href="/course"><i className="fab fa-facebook-f" /></a></li>
@@ -561,7 +426,7 @@ export default class CourseSingle extends Component {
                       </div>
                       <div className="rc-post-content">
                         <h4 className="title"><a href="/course">Nastering Data ndamentals</a></h4>
-                        <span className="price">$22.00</span>
+                        <span className="price">&#8377;22.00</span>
                       </div>
                     </div>
                     <div className="rc-post-item">

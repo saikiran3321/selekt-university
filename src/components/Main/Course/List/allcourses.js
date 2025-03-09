@@ -27,37 +27,17 @@ export default class AllCourses extends Component {
         difficulty: 'Difficulty Level',
       },
       allFilters: {
-        category: [
-          { id: 1, name: 'Art Design', value: 'artdesign' },
-          { id: 2, name: 'Business', value: 'business' },
-          { id: 3, name: 'Data Science', value: 'datascience' },
-          { id: 4, name: 'Development', value: 'development' },
-          { id: 5, name: 'Finance', value: 'finance' },
-        ],
-        price: [
-          { id: 1, name: 'Free', value: 'free' },
-          { id: 2, name: 'Premium', value: 'premium' },
-        ],
-        instructor: [
-          { id: 1, name: 'Kiran Molly', value: 'kiranmolly' },
-          { id: 2, name: 'Jackson Alive', value: 'jacksonalive' },
-          { id: 3, name: 'Oawe Alve', value: 'oawealve' },
-          { id: 4, name: 'Liakon Rivey', value: 'liakonrivey' },
-          { id: 5, name: 'Foley Patrik', value: 'foleypatrik' },
-        ],
-        language: [
-          { id: 1, name: 'English', value: 'english' },
-          { id: 2, name: 'French', value: 'french' },
-          { id: 3, name: 'German', value: 'german' },
-          { id: 4, name: 'Spanish', value: 'spanish' },
-        ],
-        difficulty: [
-          { id: 1, name: 'Beginner', value: 'beginner' },
-          { id: 2, name: 'Intermediate', value: 'intermediate' },
-          { id: 3, name: 'Expert', value: 'expert' },
-        ],
+        category: [],
+        price: [],
+        instructor: [],
+        language: [],
+        difficulty: [],
       },
     }
+  }
+
+  componentDidMount() {
+    this.beforeMount(this.state.courseList)
   }
 
   handleSortChange = (sortValue) => {
@@ -120,9 +100,10 @@ export default class AllCourses extends Component {
       filters.instructor.length === 0 ||
       filters.instructor.includes(course.instructor.replace(/\s/g, '').toLowerCase())
 
+    const price = course.price === 0 ? 'free' : 'premium'
     const matchesPrice =
       filters.price.length === 0 ||
-      filters.price.includes(course.price.replace(/\s/g, '').toLowerCase())
+      filters.price.includes(price)
 
     const matchesLanguage =
       filters.language.length === 0 ||
@@ -141,6 +122,63 @@ export default class AllCourses extends Component {
     if (sort === 'asc') return a.id - b.id
     return 0
   };
+
+  beforeMount(JobList) {
+    const { category, price, instructor, language, difficulty } = { ...this.state.allFilters }
+    JobList.forEach((list) => {
+      if (!category.some((cat) => cat.value === list.category.toString().toLowerCase())) {
+        category.push({
+          id: category.length + 1,
+          name: list.category,
+          value: list.category.toString().toLowerCase(),
+        })
+      }
+
+      const dataPrice = list.price === 0 ? 'Free' : 'Premium'
+
+      if (!price.some((pr) => pr.value === dataPrice.toString().toLowerCase())) {
+        price.push({
+          id: price.length + 1,
+          name: list.price <= 0 ? 'Free' : 'Premium',
+          value: dataPrice.toString().toLowerCase(),
+        })
+      }
+
+      if (!instructor.some((inst) => inst.value === list.instructor.toLowerCase().replace(/ /g, ''))) {
+        instructor.push({
+          id: instructor.length + 1,
+          name: list.instructor,
+          value: list.instructor.toLowerCase().replace(/ /g, ''),
+        })
+      }
+
+      if (!language.some((lang) => lang.value === list.language.toLowerCase())) {
+        language.push({
+          id: language.length + 1,
+          name: list.language.charAt(0).toUpperCase() + list.language.slice(1),
+          value: list.language.toLowerCase(),
+        })
+      }
+
+      if (!difficulty.some((diff) => diff.value === list.difficulty.toLowerCase())) {
+        difficulty.push({
+          id: difficulty.length + 1,
+          name: list.difficulty.charAt(0).toUpperCase() + list.difficulty.slice(1),
+          value: list.difficulty.toLowerCase(),
+        })
+      }
+    })
+
+    this.setState({
+      allFilters: {
+        category,
+        price,
+        instructor,
+        language,
+        difficulty,
+      },
+    })
+  }
 
   render() {
     const { courseList, courseSort, filters, allFilters, filtername } = this.state
@@ -187,12 +225,12 @@ export default class AllCourses extends Component {
               <div className="tab-pane fade show active">
                 <div className="shop-top-wrap courses-top-wrap">
                   <Row className="align-items-center">
-                    <Col md={6}>
+                    <Col md={5}>
                       <div className="shop-top-left">
                         <p>We found {filteredCourses.length} courses for you</p>
                       </div>
                     </Col>
-                    <Col md={6}>
+                    <Col md={7}>
                       <div className="d-flex justify-content-center justify-content-md-end align-items-center">
                         {(Object.values(filters).some((arr) => arr.length > 0) ||
                           sort !== '' ||

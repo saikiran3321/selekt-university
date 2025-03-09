@@ -42,7 +42,17 @@ export default class Blog extends Component {
     const { blogPost, notFound } = this.state
 
     if (notFound) {
-      return <h2 style={{ textAlign: 'center', marginTop: '50px' }}>🚫 Page Not Found</h2>
+      return (
+        <div className="header-bg">
+          <div className="error-wrap text-center">
+            <div className="error-content">
+              <h2 className="title">ERROR PAGE!
+                <span>Sorry! This Page is Not Available!</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      )
     }
 
     if (blogPost) {

@@ -22,6 +22,10 @@ export default class BlogDetails extends Component {
                         <li><i className="flaticon-calendar-date" /> {post.date}</li>
                         <li><i className="flaticon-help" /> 22 Comments</li>
                       </ul>
+                      {post.details.info.map((infotext) => {
+                        const infoid = Math.random() * 10
+                        return <p key={infoid}>{infotext}</p>
+                      })}
                       {post.details.sections.map((section) => {
                         if (!post.id) return null
                         const sectionKey = `${post.id}-${section.type}-${Math.random() * 10}-${Math.random() * 10}`
@@ -51,7 +55,7 @@ export default class BlogDetails extends Component {
                               <div className="event-details-list">
                                 <ul className="list-wrap">
                                   {section.list.map((listItem) => (
-                                    <li key={`${sectionKey}-${listItem}`}><i className="fas fa-check-circle" /> {listItem}</li>
+                                    <li key={`${sectionKey}-${listItem}`}><i className="fas fa-check-circle" /><p className="text">{listItem}</p></li>
                                   ))}
                                 </ul>
                               </div>

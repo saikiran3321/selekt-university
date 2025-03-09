@@ -461,8 +461,8 @@ textarea {
 }
 
 .btn:hover {
-    background: var(--tg-theme-secondary);
-    color: var(--tg-common-color-white);
+    background: var(--tg-theme-secondary) !important;
+    color: var(--tg-common-color-white) !important;
 }
 .btm:hover {
     background: var(--tg-theme-secondary);
@@ -563,6 +563,7 @@ textarea {
     background-color: var(--tg-theme-primary);
     height: 100%;
     width: 6px;
+    margin: 1px;
     display: inline-block;
     -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
     animation: sk-stretchdelay 1.2s infinite ease-in-out;
@@ -4159,7 +4160,6 @@ textarea {
 
 .courses__item-two-content .title a:hover {
     color: inherit;
-    background-size: 0 2px, 100% 2px;
 }
 
 .courses__item-two-content .courses__item-meta {
@@ -7966,6 +7966,7 @@ textarea {
     margin-bottom: 18px;
     font-weight: 600;
     font-size: 25px;
+    justify-content: space-between;
 }
 
 .event-cost-wrap .price strong {

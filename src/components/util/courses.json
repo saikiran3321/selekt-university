@@ -35,26 +35,143 @@
             "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
         },
         "sections": {
-            "topics": {
-                "topic": [
-                    {
-                        "ttl": "introduction to react",
-                        "time": "1 week"
-                    },
-                    {
-                        "ttl": "overview of UX/I",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "javascript",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "github",
-                        "time": "2weeks"
-                    }
-                ]
-            }
+            "section": [
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "highlight",
+                "text": "urabitur varius eros rutrum consequat Mauris sollicitudin enim condimentum luctus enim justo non molestie nisl"
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "list",
+                "text": "Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit.",
+                "list": ["Become a UX designer.", "Create quick wireframes.", "You will be able to add UX designe","Downloadable exercise files","Become a UI designer."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                }
+            ],
+            "topics": [
+                {
+                    "id" : 1,
+                    "ttl": "Introduction to react",
+                    "time": "1 week",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 2,
+                    "ttl": "Overview of UX/UI",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 3,
+                    "ttl": "Javascript",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 4,
+                    "ttl": "Github",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                }
+            ]
         },
         "duration": "12h 30m"
     },
@@ -95,26 +212,143 @@
             "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
         },
         "sections": {
-            "topics": {
-                "topic": [
-                    {
-                        "ttl": "introduction to react",
-                        "time": "1 week"
-                    },
-                    {
-                        "ttl": "overview of UX/I",
-                        "time": "2 weeks"
-                    },
-                    {
-                        "ttl": "javascript",
-                        "time": "2 weeks"
-                    },
-                    {
-                        "ttl": "github",
-                        "time": "2 weeks"
-                    }
-                ]
-            }
+            "section": [
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "highlight",
+                "text": "urabitur varius eros rutrum consequat Mauris sollicitudin enim condimentum luctus enim justo non molestie nisl"
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "list",
+                "text": "Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit.",
+                "list": ["Become a UX designer.", "Create quick wireframes.", "You will be able to add UX designe","Downloadable exercise files","Become a UI designer."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                }
+            ],
+            "topics": [
+                {
+                    "id" : 1,
+                    "ttl": "Introduction to react",
+                    "time": "1 week",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 2,
+                    "ttl": "Overview of UX/UI",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 3,
+                    "ttl": "Javascript",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 4,
+                    "ttl": "Github",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                }
+            ]
         },
         "duration": "10h 30m",
         "actual_price": 125
@@ -156,26 +390,143 @@
             "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
         },
         "sections": {
-            "topics": {
-                "topic": [
-                    {
-                        "ttl": "introduction to react",
-                        "time": "1 week"
-                    },
-                    {
-                        "ttl": "overview of UX/I",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "javascript",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "github",
-                        "time": "2weeks"
-                    }
-                ]
-            }
+            "section": [
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "highlight",
+                "text": "urabitur varius eros rutrum consequat Mauris sollicitudin enim condimentum luctus enim justo non molestie nisl"
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "list",
+                "text": "Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit.",
+                "list": ["Become a UX designer.", "Create quick wireframes.", "You will be able to add UX designe","Downloadable exercise files","Become a UI designer."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                }
+            ],
+            "topics": [
+                {
+                    "id" : 1,
+                    "ttl": "Introduction to react",
+                    "time": "1 week",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 2,
+                    "ttl": "Overview of UX/UI",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 3,
+                    "ttl": "Javascript",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 4,
+                    "ttl": "Github",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                }
+            ]
         },
         "duration": "10h"
     },
@@ -216,26 +567,143 @@
             "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
         },
         "sections": {
-            "topics": {
-                "topic": [
-                    {
-                        "ttl": "introduction to react",
-                        "time": "1 week"
-                    },
-                    {
-                        "ttl": "overview of UX/I",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "javascript",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "github",
-                        "time": "2weeks"
-                    }
-                ]
-            }
+            "section": [
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "highlight",
+                "text": "urabitur varius eros rutrum consequat Mauris sollicitudin enim condimentum luctus enim justo non molestie nisl"
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "list",
+                "text": "Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit.",
+                "list": ["Become a UX designer.", "Create quick wireframes.", "You will be able to add UX designe","Downloadable exercise files","Become a UI designer."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                }
+            ],
+            "topics": [
+                {
+                    "id" : 1,
+                    "ttl": "Introduction to react",
+                    "time": "1 week",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 2,
+                    "ttl": "Overview of UX/UI",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 3,
+                    "ttl": "Javascript",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 4,
+                    "ttl": "Github",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                }
+            ]
         },
         "duration": "25h 30m",
         "actual_price": 225
@@ -277,26 +745,143 @@
             "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
         },
         "sections": {
-            "topics": {
-                "topic": [
-                    {
-                        "ttl": "introduction to react",
-                        "time": "1 week"
-                    },
-                    {
-                        "ttl": "overview of UX/I",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "javascript",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "github",
-                        "time": "2weeks"
-                    }
-                ]
-            }
+            "section": [
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "highlight",
+                "text": "urabitur varius eros rutrum consequat Mauris sollicitudin enim condimentum luctus enim justo non molestie nisl"
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "list",
+                "text": "Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit.",
+                "list": ["Become a UX designer.", "Create quick wireframes.", "You will be able to add UX designe","Downloadable exercise files","Become a UI designer."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                }
+            ],
+            "topics": [
+                {
+                    "id" : 1,
+                    "ttl": "Introduction to react",
+                    "time": "1 week",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 2,
+                    "ttl": "Overview of UX/UI",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 3,
+                    "ttl": "Javascript",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 4,
+                    "ttl": "Github",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                }
+            ]
         },
         "duration": "2h 30m"
     },
@@ -337,26 +922,143 @@
             "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
         },
         "sections": {
-            "topics": {
-                "topic": [
-                    {
-                        "ttl": "introduction to react",
-                        "time": "1 week"
-                    },
-                    {
-                        "ttl": "overview of UX/I",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "javascript",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "github",
-                        "time": "2weeks"
-                    }
-                ]
-            }
+            "section": [
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "highlight",
+                "text": "urabitur varius eros rutrum consequat Mauris sollicitudin enim condimentum luctus enim justo non molestie nisl"
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "list",
+                "text": "Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit.",
+                "list": ["Become a UX designer.", "Create quick wireframes.", "You will be able to add UX designe","Downloadable exercise files","Become a UI designer."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                }
+            ],
+            "topics": [
+                {
+                    "id" : 1,
+                    "ttl": "Introduction to react",
+                    "time": "1 week",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 2,
+                    "ttl": "Overview of UX/UI",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 3,
+                    "ttl": "Javascript",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 4,
+                    "ttl": "Github",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                }
+            ]
         },
         "duration": "6h 30m"
     },
@@ -397,26 +1099,143 @@
             "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
         },
         "sections": {
-            "topics": {
-                "topic": [
-                    {
-                        "ttl": "introduction to react",
-                        "time": "1 week"
-                    },
-                    {
-                        "ttl": "overview of UX/I",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "javascript",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "github",
-                        "time": "2weeks"
-                    }
-                ]
-            }
+            "section": [
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "highlight",
+                "text": "urabitur varius eros rutrum consequat Mauris sollicitudin enim condimentum luctus enim justo non molestie nisl"
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "list",
+                "text": "Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit.",
+                "list": ["Become a UX designer.", "Create quick wireframes.", "You will be able to add UX designe","Downloadable exercise files","Become a UI designer."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                }
+            ],
+            "topics": [
+                {
+                    "id" : 1,
+                    "ttl": "Introduction to react",
+                    "time": "1 week",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 2,
+                    "ttl": "Overview of UX/UI",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 3,
+                    "ttl": "Javascript",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 4,
+                    "ttl": "Github",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                }
+            ]
         },
         "duration": "1h 30m",
         "actual_price": 125
@@ -458,26 +1277,143 @@
             "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
         },
         "sections": {
-            "topics": {
-                "topic": [
-                    {
-                        "ttl": "introduction to react",
-                        "time": "1 week"
-                    },
-                    {
-                        "ttl": "overview of UX/I",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "javascript",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "github",
-                        "time": "2weeks"
-                    }
-                ]
-            }
+            "section": [
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "highlight",
+                "text": "urabitur varius eros rutrum consequat Mauris sollicitudin enim condimentum luctus enim justo non molestie nisl"
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "list",
+                "text": "Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit.",
+                "list": ["Become a UX designer.", "Create quick wireframes.", "You will be able to add UX designe","Downloadable exercise files","Become a UI designer."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                }
+            ],
+            "topics": [
+                {
+                    "id" : 1,
+                    "ttl": "Introduction to react",
+                    "time": "1 week",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 2,
+                    "ttl": "Overview of UX/UI",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 3,
+                    "ttl": "Javascript",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 4,
+                    "ttl": "Github",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                }
+            ]
         },
         "duration": "30m"
     },
@@ -518,26 +1454,143 @@
             "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
         },
         "sections": {
-            "topics": {
-                "topic": [
-                    {
-                        "ttl": "introduction to react",
-                        "time": "1 week"
-                    },
-                    {
-                        "ttl": "overview of UX/I",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "javascript",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "github",
-                        "time": "2weeks"
-                    }
-                ]
-            }
+            "section": [
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "highlight",
+                "text": "urabitur varius eros rutrum consequat Mauris sollicitudin enim condimentum luctus enim justo non molestie nisl"
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "list",
+                "text": "Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit.",
+                "list": ["Become a UX designer.", "Create quick wireframes.", "You will be able to add UX designe","Downloadable exercise files","Become a UI designer."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                }
+            ],
+            "topics": [
+                {
+                    "id" : 1,
+                    "ttl": "Introduction to react",
+                    "time": "1 week",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 2,
+                    "ttl": "Overview of UX/UI",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 3,
+                    "ttl": "Javascript",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 4,
+                    "ttl": "Github",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                }
+            ]
         },
         "duration": "15h 45m"
     },
@@ -549,7 +1602,7 @@
         "instructor": "Jackson Alive",
         "catcls": "cat-two",
         "language": "china",
-        "difficulty": "china",
+        "difficulty": "beginner",
         "rating": "china",
         "reviews": 10,
         "price": 100,
@@ -578,26 +1631,143 @@
             "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
         },
         "sections": {
-            "topics": {
-                "topic": [
-                    {
-                        "ttl": "introduction to react",
-                        "time": "1 week"
-                    },
-                    {
-                        "ttl": "overview of UX/I",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "javascript",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "github",
-                        "time": "2weeks"
-                    }
-                ]
-            }
+            "section": [
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "highlight",
+                "text": "urabitur varius eros rutrum consequat Mauris sollicitudin enim condimentum luctus enim justo non molestie nisl"
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "list",
+                "text": "Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit.",
+                "list": ["Become a UX designer.", "Create quick wireframes.", "You will be able to add UX designe","Downloadable exercise files","Become a UI designer."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                }
+            ],
+            "topics": [
+                {
+                    "id" : 1,
+                    "ttl": "Introduction to react",
+                    "time": "1 week",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 2,
+                    "ttl": "Overview of UX/UI",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 3,
+                    "ttl": "Javascript",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 4,
+                    "ttl": "Github",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                }
+            ]
         },
         "duration": "11h 30m"
     },
@@ -638,26 +1808,143 @@
             "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
         },
         "sections": {
-            "topics": {
-                "topic": [
-                    {
-                        "ttl": "introduction to react",
-                        "time": "1 week"
-                    },
-                    {
-                        "ttl": "overview of UX/I",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "javascript",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "github",
-                        "time": "2weeks"
-                    }
-                ]
-            }
+            "section": [
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "highlight",
+                "text": "urabitur varius eros rutrum consequat Mauris sollicitudin enim condimentum luctus enim justo non molestie nisl"
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "list",
+                "text": "Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit.",
+                "list": ["Become a UX designer.", "Create quick wireframes.", "You will be able to add UX designe","Downloadable exercise files","Become a UI designer."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                }
+            ],
+            "topics": [
+                {
+                    "id" : 1,
+                    "ttl": "Introduction to react",
+                    "time": "1 week",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 2,
+                    "ttl": "Overview of UX/UI",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 3,
+                    "ttl": "Javascript",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 4,
+                    "ttl": "Github",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                }
+            ]
         },
         "duration": "150h 30m"
     },
@@ -698,26 +1985,143 @@
             "header": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm text used in laying out print, graphic or web designsm dolor sit amet."
         },
         "sections": {
-            "topics": {
-                "topic": [
-                    {
-                        "ttl": "introduction to react",
-                        "time": "1 week"
-                    },
-                    {
-                        "ttl": "overview of UX/I",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "javascript",
-                        "time": "2weeks"
-                    },
-                    {
-                        "ttl": "github",
-                        "time": "2weeks"
-                    }
-                ]
-            }
+            "section": [
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of apage when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "highlight",
+                "text": "urabitur varius eros rutrum consequat Mauris sollicitudin enim condimentum luctus enim justo non molestie nisl"
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "list",
+                "text": "Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit.",
+                "list": ["Become a UX designer.", "Create quick wireframes.", "You will be able to add UX designe","Downloadable exercise files","Become a UI designer."]
+                },
+                {
+                "title": "Why this coaching is needed",
+                "type": "normal",
+                "text": ["Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem.","Horem ipsum dolor sitter metting Great consectetur adipiscing idealorem ipsum dolor sitter mettingtablished of a page when lookinThe point of using Lorem Ipsu ss normal distribution.est, qui dolor emr ipsum quia dolor sit ame consec tetur. Esse mo lestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac cumsan et iusto odio dignissim qui blandit praesent consectetur adipiscing idealorem."]
+                }
+            ],
+            "topics": [
+                {
+                    "id" : 1,
+                    "ttl": "Introduction to react",
+                    "time": "1 week",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 2,
+                    "ttl": "Overview of UX/UI",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 3,
+                    "ttl": "Javascript",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                },
+                {
+                    "id" : 4,
+                    "ttl": "Github",
+                    "time": "2weeks",
+                    "subtopic" : [
+                        {
+                            "id" : 1,
+                            "title" : "Course Installation",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": false
+                        },
+                        {
+                            "id": 2,
+                            "title" : "Create a Simple React App",
+                            "video": "link",
+                            "duraction" : "07:48",
+                            "lock": true
+                        },
+                        {
+                            "id" : 3,
+                            "title" : "React for the Rest of us",
+                            "video": "link",
+                            "duraction" : "10:48",
+                            "lock": true
+                        }
+                    ]
+                }
+            ]
         },
         "duration": "1h"
     }
