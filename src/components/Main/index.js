@@ -97,7 +97,7 @@ export default class Help extends Component {
   }
 
   render() {
-    const { selectedKey, scroll, isMobileMenu } = this.state
+    const { selectedId, selectedKey, scroll, isMobileMenu } = this.state
     return (
       <Fragment>
         <Header
@@ -107,7 +107,9 @@ export default class Help extends Component {
           scroll={scroll}
         />
         <main className="main-area fix">
-          {selectedKey !== 'home' && <Breadcrumb breadcrumbTitle={selectedKey} />}
+          {!(selectedKey === 'home' || (selectedKey === 'course' && selectedId !== null)) && (
+          <Breadcrumb breadcrumbTitle={selectedKey} />
+          )}
           {this.getRenderComponent()}
         </main>
         <Footer />

@@ -46,7 +46,7 @@ export default class Blog extends Component {
     }
 
     if (blogPost) {
-      return <Details post={blogPost} />
+      return <Details course={blogPost} />
     }
 
     return <List blogPosts={blogData} />
